@@ -1,0 +1,651 @@
+@font-face {
+ font-family: "Dubai-Bold";
+ src: url('../fonts/Dubai-Bold.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Bold.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+@font-face {
+ font-family: "Dubai-Light";
+ src: url('../fonts/Dubai-Light.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Light.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Light.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Light.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+@font-face {
+ font-family: "Dubai-Medium";
+ src: url('../fonts/Dubai-Medium.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Medium.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Medium.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Medium.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+@font-face {
+ font-family: "Dubai-Regular";
+ src: url('../fonts/Dubai-Regular.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Regular.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+/* Body Css Starts here*/
+body{
+	background:#fff;
+	font-family: "Dubai-Regular";
+	font-size: 16px;
+}
+.p0{
+    padding:0px !important;
+}
+/* Body Css Starts here*/
+/* Header Css Starts here*/
+.navbar {
+    border-radius: 0;
+    border-bottom: 2px solid #6E686B;
+    min-height: 100px;
+}
+#myNavbar {
+    padding-top: 25px;
+}
+.navbar-nav > li > a {
+    color: #eee;
+    text-transform: uppercase;
+    font-family: Dubai-Regular;
+    font-size: 18px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background: none;
+}
+.nav > li.active a {
+    color: #e1aa53;
+    font-size: 18px;
+    font-family: Dubai-Medium;
+}
+.navbar-brand {
+    width: 130px;
+}
+.navbar-nav.login-menu > li > a {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.navbar-nav.login-menu li.language a {
+    color: #999;
+}
+.navbar-nav.main-menu {
+    float: left;
+    margin: 0;
+    padding-left: 100px;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	background:transparent;
+}
+/* header Css Ends here*/
+/*section home one strats*/
+.home-one {
+    background: url('../images/Banner.jpg')no-repeat;
+	height: 623px;
+	background-size: 100% 100% ;
+}
+.banner-content {
+    margin-top: 25%;
+}
+.banner-content p {
+    width: 60%;
+    color: #fff;
+}
+.banner-content h1 {
+    color: #fff;
+}
+.home-one .read-more a {
+    font-family: Dubai-Regular;
+    text-transform: capitalize;
+    color: #fff;
+    border: 1px solid #6C5C30;
+    padding: 10px 40px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size:18px;
+    position: relative;
+    transition-duration: 1s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+    background: #d6a848; /* Old browsers */
+    background: -moz-linear-gradient(top, #d6a848 0%, #ce9740 31%, #c88e3f 65%, #c38639 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6a848', endColorstr='#c38639',GradientType=0 ); /* IE6-9 */
+}
+.home-one .read-more a:hover{
+	text-decoration:none;
+    background: rgba(41, 33, 20, 1);
+    color: #E4AF56;
+    border: 1px solid #E4AF56;
+}
+/*section home one ends*/
+/*section home two strats*/
+.home-two {
+    background: #F7D065;
+    text-align: center;
+    padding: 60px 0px;
+
+}
+.home-two h2{
+	color: #694f07;
+	text-transform: uppercase;
+	position: relative;
+    font-family: Dubai-Regular;
+    font-size: 34px;
+}
+.home-two h2::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #694f07;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    left: auto;
+    right: auto;
+    margin-left: 20px;
+    top: -10px;
+}
+.home-two p{
+	color: #010101;
+    font-family: Dubai-Regular;
+    font-size: 18px;
+}
+.read-more a {
+    color: #6C5C30;
+    border: 2px solid #6C5C30;
+    padding: 10px 40px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size:18px;
+}
+.read-more a:hover{
+	text-decoration:none;
+}
+/*section home two ends*/
+/*section home three strats*/
+.home-three {
+    background: url('../images/2.jpg')no-repeat;
+    min-height: 750px;
+    padding:60px 0px;
+    background-size: 100% 100%;
+}
+.ourservice.summery {
+    text-align: center;
+    color: #fff;
+}
+.ourservice.summery h2{
+    text-transform: uppercase;
+    position: relative;
+    font-family: Dubai-Regular;
+    font-size: 34px;
+}
+.ourservice.summery  h2::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #B59449;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    left: auto;
+    right: auto;
+    margin-left: 50px;
+    top: -10px;
+}
+.ourservice.summery p{
+    font-size: 16px;
+    font-family: Dubai-Regular;
+}
+.service-content {
+    border-bottom: 1px solid #AC9764;
+    color:#fff;
+    margin-bottom: 12px;
+}
+.home-three .row:last-child .service-content {
+    border-bottom: 0 none;
+}
+.service-content p{
+    margin-bottom: 12px;
+}
+.service-content h3 {
+    margin-top: 0px;
+}
+.service-img .img-responsive {
+    margin: 0 auto;
+}
+.home-three .types {
+    margin-top: 30px;
+}
+/*section home three ends*/
+/*section home four strats*/
+.home-four {
+    padding:60px 0px;
+    background-size: 100% 100%;
+}
+.team.summery {
+    text-align: center;
+    color: #333;
+}
+.team.summery h2{
+    text-transform: uppercase;
+    position: relative;
+    font-family: Dubai-Regular;
+    font-size: 34px;
+}
+.team.summery  h2::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #c09943;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    left: auto;
+    right: auto;
+    margin-left: 30px;
+    top: -10px;
+}
+.slider {
+  width: 80%;
+  margin: 0px auto;
+}
+.slick-slide {
+  margin: 10px 18px;
+}
+.slick-slide img {
+
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-slide.slick-active {
+    opacity: 0.5;
+}
+.slick-slide.slick-current.slick-active.slick-center {
+    transform: scale(1.3);
+    opacity: 1;
+}
+.slide-img {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -110px;
+}
+.slick-slide.slick-current.slick-active.slick-center .slide-img{
+
+}
+.slide-content{
+    margin: 20px auto 0;
+    width: 100%;
+    padding-top:180px;
+}
+.slide-con {   
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: #edbf5b;
+}
+.slick-center.slide-con{
+    padding:20px 0px;
+}
+.slide-con > h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Dubai-Regular;
+    color: #010101;
+}
+.slide-con > h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Dubai-Light;
+    color: #010101;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.social-icon .social-list li {
+    display: inline-block;
+    margin: 0px;
+}
+.social-icon ul.social-list {
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+.social-icon {
+      position: relative;
+      text-align: center;
+      list-style: outside none none;
+      margin-bottom: 30px;
+}
+.list-unstyled.social > li {
+    display: inline;
+    margin-right: 0;
+}
+.social-icon .link {
+    border: 1px solid #8b8473;
+    border-radius: 50%;
+    color: #8b8473;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 0px;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 40px;
+}
+.social-icon .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social-icon .link:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.slick-slide.slick-current.slick-active.slick-center .social-list{
+    padding-bottom: 55px;
+}
+/*section home four ends*/
+/*section home five strats*/
+.home-five {
+    background: url('../images/EE.jpg')no-repeat;
+    min-height: 623px;
+    background-size: 100% 100%;
+    padding:60px 0px;
+}
+.contact.summery {
+    text-align: center;
+    color: #fff;
+}
+.contact.summery h2{
+    text-transform: uppercase;
+    position: relative;
+    font-family: Dubai-Regular;
+    font-size: 34px;
+}
+.contact.summery  h2::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #B59449;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    left: auto;
+    right: auto;
+    margin-left: 30px;
+    top: -10px;
+}
+.contact-address > h3 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.contact-address p{
+    color: #fff;
+}
+.contact-form{
+    margin-top:20px;
+}
+.contact-form .form-control {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #986a69;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 50px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.form-control::-moz-placeholder{
+    color: #fff;
+}
+.contact-form textarea.form-control{
+    max-width: 100%;
+    min-height: 100px;
+}
+.contact-form .btn-default {
+    background: #d6a848; /* Old browsers */
+    background: -moz-linear-gradient(top, #d6a848 0%, #ce9740 31%, #c88e3f 65%, #c38639 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6a848', endColorstr='#c38639',GradientType=0 ); /* IE6-9 */
+    border-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: 18px; 
+}
+/*section home five ends*/
+/*footer section starts*/
+footer {
+    background: #1f1f1f none repeat scroll 0 0;
+    padding: 30px 0px;
+}
+.list-unstyled.quick-links {
+    margin-top: 15px;
+}
+.list-unstyled.quick-links > li{
+    display: inline;
+    margin-right: 10px;
+}
+.list-unstyled.social > li{
+    display: inline;
+    margin-right: 0px;
+}
+.list-unstyled.quick-links a, .powered-by {
+    color: #928978;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.footer-logo > img {
+    display: inherit;
+    margin: 0 auto;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo > img {
+    display: inherit;
+    margin: 0 auto;
+}
+.footer-logo > span {
+    color: #fff;
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    margin: 15px auto 0;
+    text-align: center;
+    width: 60%;
+}
+.follow-us{
+    text-align: right;
+}
+.follow-us > h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.social {
+    position: relative;
+    text-align: right;
+    transform: translateY(-50%);
+}
+.social .link {
+    background-clip: content-box;
+    border: 2px solid #8b8473;
+    border-radius: 50%;
+    color: #8b8473;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 0px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    vertical-align: middle;
+    width: 50px;
+}
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social .link:hover {
+  padding: 20px;
+  color: #fff;
+  border-color: #fff;
+  transform: translateX(0px) rotate(360deg);
+}
+/*customer-admin CSS starts */
+.customer-dashboard .navbar {
+    border-radius: 0;
+    border-bottom: 0px solid #6E686B;
+    min-height: 100px;
+    margin-bottom: 0px;
+}
+.customer-dashboard .navbar-nav.login-menu li.language a {
+    color: #777;
+}
+ul li.bell-notification .fa.fa-bell {
+    color: #F7D065;
+    font-size: 24px;
+}
+ul li.bell-notification a {
+    position: relative;
+}
+.bel-count {
+    background: #4B4B4B;
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    text-align: center;
+}
+ul li.bell-notification a {
+    position: relative;
+}
+.nav.nav-pills li a {
+    color: #1F1F1F;
+    font-size: 18px;
+    font-family: Dubai-Regular;
+    text-transform: capitalize;
+    padding: 20px 0px 20px 30px;
+}
+.nav.nav-pills li a i{
+    margin-right: 10px;
+}
+.nav.nav-pills li.active a {
+    border-radius: 0px;
+    background: #fff;
+}
+.nav.nav-pills li.active{
+    background:#fff;
+}
+.nav-stacked li {
+    background: #F7D065;
+}
+/*3rd April CSS */
+.propic {
+    height: 105px;
+    display: inline-block;
+    width: 32%;
+}
+.card_content {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    float: right;
+}
+.cardinfo_content{
+     display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    float: right;
+}
+.main_wrapper {
+    background: #EFE4DE;
+}
+.card_info {
+    background: #FEFEFE;
+    padding: 7% 5%;
+}
+.card_content p {
+    color: #151515;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.card_content span {
+    display: block;
+    margin-top: 38px;
+    font-size: 12px;
+    color: #1B1B1B;
+    font-weight: bold;
+}
+.card_info a {
+    color: #202020;
+}
+.cardinfo_content p {
+    color: #131313;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.balance {
+    font-weight: bold;
+    font-size: 12px;
+}
+.cardinfo_content button {
+    background: #FCCE70;
+    border: 1px solid #FCCE70;
+    margin-top: 27px;
+    text-transform: capitalize;
+    padding: 3% 8%;
+}
+.cardinfo_content .fa.fa-plus {
+    position: relative;
+    top: 2px;
+}
+.transfer {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    border-left: 2px solid #E2E2E2;
+}
+.transfer-funds {
+    background: #FEFEFE;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 3%;
+}
+.transfer:first-child {
+    border-left: 0;
+}
+.transfer p {
+    text-transform: capitalize;
+    margin-top: 9px;
+}
+.transfer img:hover {
+    background: #FCCE70;
+    cursor: pointer;
+}
+/*3rd April CSS ends */
+
+/*3rd April CSS ends */
