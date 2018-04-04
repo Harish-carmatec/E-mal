@@ -20,23 +20,15 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <header class="customer-dashboard">
+  <body class="customer-dashboard">
+    <header>
       <div class="container-fluid">
-        <nav class="navbar">
+        <nav class="navbar navbar-fixed-top">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
-              <a class="navbar-brand" href="#"><img src="assets/images/logo-big.png"></a>
+              <a class="navbar-brand" href="#"><img src="assets/images/customer-dashboard/emal-logo.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right login-menu">
-                <li class="bell-notification"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i><span class="bel-count">12</span>
-</a></li>
-                <li class="profile-pic"><a href="#"></a></li>
                 <li class="dropdown language">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">En
                   <span class="caret"></span></a>
@@ -45,159 +37,175 @@
                     <li><a href="#">Ar</a></li>
                   </ul>
                 </li>
+                <li class="bell-notification"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i><span class="bel-count">12</span></a></li>
+                <li class="profile-pic"><a href="#"><img src="assets/images/customer-dashboard/profile.png"></a></li>
               </ul>
             </div>
         </nav>
       </div>
-      </header> 
-   <section>
+    </header> 
+    <section class="body-content">
     	<div class="row">
     <!-- uncomment code for absolute positioning tweek see top comment in css -->
     <!-- <div class="absolute-wrapper"> </div> -->
     <!-- Menu -->
-    <div class="side-menu">
-    
-    <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-        <div class="brand-wrapper">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-
-    </div>
-
-    <!-- Main Menu -->
-    <div class="side-menu-container">
-        <ul class="nav navbar-nav nav-pills nav-stacked">
-
-            <li class="active">
-                <a href="">
-                  <i class="fa fa-tachometer" aria-hidden="true"></i>
-                  dashboard
-                </a>
-              </li>
-               <li class="">
-                <a href="">
-                  <i class="fa fa-google-wallet"></i>
-                  top up wallet
-                </a>
-              </li>
-              <li class="">
-                <a href="">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  my profile
-                </a>
-              </li>
-              <li class="">
-                <a href="">
-                 <i class="fa fa-key"></i>
-                  change password
-                </a>
-              </li>
-              <li class="">
-                <a href="">
-                  <i class="fa fa-pie-chart" aria-hidden="true"></i>
-                  QR code
-                </a>
-              </li>
-              <li class="">
-                <a href="">
-                  <i class="fa fa-adjust"></i>
-                  saved cards
-                </a>
-              </li>
-              <li class="">
-                <a href="">
-                <i class="fa fa-google-wallet"></i>
-                  my transactions
-                </a>
-              </li>
-
-        </ul>
-    </div><!-- /.navbar-collapse -->
-</nav>
-    
-    </div>
-
-    <!-- Main Content -->
-    <div class="container-fluid">
-        <div class="side-body">
-           <div class="col-md-12 heading_wrapper mb20 mt0">
-              <h3 class="text-capitalize">dashboard</h3>
+        <div class="side-menu">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <div class="brand-wrapper">
+                  <button type="button" class="navbar-toggle">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="side-menu-container">
+              <ul class="nav navbar-nav nav-pills nav-stacked">
+                <li class="active" href="#dashboard" data-toggle="tab">
+                  <a href="">
+                    <span><img src="assets/images/customer-dashboard/dash-board.png" alt="dashboard"></span>
+                    dashboard
+                  </a>
+                </li>
+                 <li class="" href="#topupwallet" data-toggle="tab">
+                  <a href="">
+                    <span><img src="assets/images/customer-dashboard/Topup-wallet.png" alt="topup wallet"></span>
+                    top up wallet
+                  </a>
+                </li>
+                <li class="" href="#myprofile" data-toggle="tab">
+                  <a href="">
+                    <span><img src="assets/images/customer-dashboard/my-profile.png" alt="my profile"></span>
+                    my profile
+                  </a>
+                </li>
+                <li class="" href="#changepassword" data-toggle="tab">
+                  <a href="">
+                   <span><img src="assets/images/customer-dashboard/change-password.png" alt="change password"></span>
+                    change password
+                  </a>
+                </li>
+                <li class="" href="#qrcode" data-toggle="tab">
+                  <a href="">
+                    <span><img src="assets/images/customer-dashboard/QR-code.png" alt="qr code"></span>
+                    QR code
+                  </a>
+                </li>
+                <li class="" href="#savedcards" data-toggle="tab">
+                  <a href="">
+                    <span><img src="assets/images/customer-dashboard/saved-cards.png" alt="saved cards"></span>
+                    saved cards
+                  </a>
+                </li>
+                <li class="" href="#mytransactions" data-toggle="tab">
+                  <a href="">
+                  <span><img src="assets/images/customer-dashboard/transaction.png" alt="transaction"></span>
+                    my transactions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="container-fluid p0">
+          <div class="side-body">
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="dashboard">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">dashboard</h3>
+                </div>
+                <div class="col-xs-12 p0">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="card_info">
-                        <div class="propic" style="background:url('./assets/images/canvas.png');">
-
+                        <div class="propic">
+                            <img src="assets/images/customer-dashboard/profile-pic.png" alt="profile">
                          </div>
                         <div class="card_content">
                           <p>martin guptil</p>
                           <a href="#">martin.guptil@hotmail.com</a>
-                          <span>+ 91 888 123 4567</span>
+                          <div class="span"><h4>+ 91 888 123 4567</h4></div>
                         </div>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="card_info viewcard">
-                        <div class="propic" style="background:url('./assets/images/wallet.png');background-size: cover;">
+                        <div class="propic">
+                          <img src="assets/images/customer-dashboard/wallet.png" alt="wallet">
                          </div>
                         <div class="cardinfo_content">
                           <p>Your wallet balance</p>
                           <p class="balance">AED 75.00</p>
-                          <span> <button type="button"><i class="fa fa-plus"></i> &nbsp &nbsp top up money</button> </span>
+                          <div class="span">
+                            <button type="button"><i class="fa fa-plus"></i> &nbsp &nbsp top up money</button>
+                          </div>
                         </div>
                     </div>
                   </div>
-                  <div class="col-md-12 col-sm-12 col-cs-12">
-                    <div class="transfer-funds">
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 mt30">
+                    <div class="col-md-3 col-sm-6  transfer-funds">
                       <div class="transfer">
-                        <img src="assets/images/wallet.png">
+                        <div class="image tranfer"></div>
                         <p>transfer funds</p>
                       </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6  transfer-funds">
                       <div class="transfer">
-                        <img src="assets/images/wallet.png">
+                        <div class="image pay-bil"></div>
                         <p>pay bills</p>
                       </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6  transfer-funds">
                       <div class="transfer">
-                        <img src="assets/images/wallet.png">
-                        <p>e-wallet</p>
-                      </div>
-                      <div class="transfer">
-                        <img src="assets/images/wallet.png">
-                        <p>e-mall cash</p>
+                        <div class="image tranfer"></div>
+                        <p>transfer funds</p>
                       </div>
                     </div>
-                  </div>      
-        </div>
-    </div>
-</div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="col-xs-12 col-sm-4">
-          <ul class="list-unstyled quick-links">
-            <li><a href="javascript:void();">Privacy Policy</a></li><li><a>|</a><li><a href="javascript:void();">Terms and Contidions</a></li>
-          </ul>
-          <p class="powered-by">Powered by @e-Mal</p>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="footer-logo">
-            <img src="assets/images/logo-big.png" alt="Footer-Logo">
-            <span>A True Smart Economy & Financial Ecosystem</span>
+                    <div class="col-md-3 col-sm-6  transfer-funds">
+                      <div class="transfer">
+                        <div class="image e-Mal"></div>
+                        <p>e-Mal cards</p>
+                      </div>
+                    </div>
+                </div>      
+              </div>
+              <div class="tab-pane fade" id="topupwallet">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">Topup Wallet</h3>
+                </div>      
+              </div>
+              <div class="tab-pane fade" id="myprofile">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">my profile</h3>
+                </div>      
+              </div>
+              <div class="tab-pane fade" id="changepassword">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">change password</h3>
+                </div>      
+              </div>
+              <div class="tab-pane fade" id="qrcode">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">QR code</h3>
+                </div>      
+              </div>
+              <div class="tab-pane fade" id="savedcards">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">saved cards</h3>
+                </div>      
+              </div>
+              <div class="tab-pane fade" id="mytransactions">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">my transactions</h3>
+                </div>      
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 follow-us">
-          <h3>follow us on Social media</h3>
-            <ul class="list-unstyled social">
-              <li><a href="#" class="link facebook" target="_parent"><span class="fa fa-facebook"></span></a></li><li><a href="#" class="link linkedin" target="_parent"><span class="fa fa-linkedin"></span></a></li><li><a href="#" class="link google-plus" target="_parent"><span class="fa fa-google-plus"></span></a></li>
-            </ul>
-        </div>
-      </div>
-      </footer> 
+    </div>
+  </section>
     <!-- Scripts files -->
     <script src="assets/js/jquery.min.js" async ></script>
     <script src="assets/js/viewportchecker.js" defer></script>

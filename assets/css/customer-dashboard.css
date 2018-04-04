@@ -20,16 +20,31 @@
 }
 /* Body Css Starts here*/
 body{
-	background:#fff;
+	background:#fff url('../images/customer-dashboard/customer-bg.jpg') no-repeat;
 	font-family: "Dubai-Regular";
 	font-size: 16px;
 }
 .p0{
     padding:0px !important;
 }
+.mt10{
+  margin-top: 10px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.body-content {
+    margin-top: 100px;
+}
 /* Body Css Starts here*/
 /* Header Css Starts here*/
-.navbar {
+.customer-dashboard .navbar.navbar-fixed-top {
+    background: #fff;
+}
+.navbar.navbar-fixed-top {
     border-radius: 0;
     border-bottom: 2px solid #6E686B;
     min-height: 100px;
@@ -53,7 +68,8 @@ body{
     font-family: Dubai-Medium;
 }
 .navbar-brand {
-    width: 130px;
+    width: 150px;
+margin-left: 15px;
 }
 .navbar-nav.login-menu > li > a {
     text-transform: capitalize;
@@ -70,6 +86,17 @@ body{
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
 	background:transparent;
 }
+.nav-stacked > li + li {
+    margin-top: 0px;
+    margin-left: 0;
+}
+.customer-dashboard .navbar-right {
+    float: right !important;
+    margin-right: 10px;
+}
+.navbar-nav > li.profile-pic {
+    margin-top: -15px;
+}
 /* header Css Ends here*/
 
 /*customer dashboard css*/
@@ -80,37 +107,11 @@ body{
   margin-right: 0;
   margin-left: 0;
 }
-/* 
-    Sometimes the sub menus get too large for the page and prevent the menu from scrolling, limiting functionality
-    A quick fix is to change .side-menu to 
-
-    -> position:absolute
-    
-    and uncomment the code below.
-    You also need to uncomment 
-    
-    -> <div class="absolute-wrapper"> </div> in the html file
-
-    you also need to tweek the animation. Just uncomment the code in that section
-    --------------------------------------------------------------------------------------------------------------------
-    If you want to make it really neat i suggest you look into an alternative like http://areaaperta.com/nicescroll/
-    This will allow the menu to say fixed on body scoll and scoll on the side bar if it get to large
-*/
-/*.absolute-wrapper{
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    background-color: #f8f8f8;
-    border-right: 1px solid #e7e7e7;
-}*/
-
 .side-menu {
- /* position: fixed;*/
- position: absolute;
+  position: fixed;
   width: 300px;
   height: 100%;
-  background-color: #f8f8f8;
-  border-right: 1px solid #e7e7e7;
+  background-color: #F7D065;
 }
 .side-menu .navbar {
   border: none;
@@ -122,12 +123,10 @@ body{
 .side-menu .navbar-nav .active a {
   background-color: transparent;
   margin-right: -1px;
-  border-right: 5px solid #e7e7e7;
 }
 .side-menu .navbar-nav li {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #e7e7e7;
 }
 .side-menu .navbar-nav li a {
   padding: 15px;
@@ -197,6 +196,7 @@ body{
 /* Main body section */
 .side-body {
   margin-left: 310px;
+  margin-right: 10px;
 }
 /*css customer dashboard*/
 
@@ -322,15 +322,27 @@ ul li.bell-notification a {
     color: #1F1F1F;
     font-size: 18px;
     font-family: Dubai-Regular;
-    text-transform: capitalize;
-    padding: 20px 0px 20px 30px;
+    text-transform: uppercase;
+    padding: 20px 0px 20px 0px;
+    margin-left: 30px;
+    border-bottom: 1px solid #CEA942;
+    border-radius: 0px;
+    line-height: 18px;
+
 }
-.nav.nav-pills li a i{
+.nav.nav-pills li a span{
     margin-right: 10px;
 }
-.nav.nav-pills li.active a {
+.nav.nav-pills li.active a, .nav.nav-pills li.active a:hover,.nav.nav-pills li.active a:focus {
     border-radius: 0px;
-    background: #fff;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+}
+.nav.nav-pills li:hover, .nav.nav-pills li.active {
+    background: #eee;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+  background:transparent;
 }
 .nav.nav-pills li.active{
     background:#fff;
@@ -340,9 +352,7 @@ ul li.bell-notification a {
 }
 /*3rd April CSS */
 .propic {
-    height: 105px;
     display: inline-block;
-    width: 32%;
 }
 .card_content {
     display: inline-block;
@@ -361,38 +371,50 @@ ul li.bell-notification a {
 }
 .card_info {
     background: #FEFEFE;
-    padding: 7% 5%;
+    padding: 6%;
+    display: inline-block;
+    width: 100%;;
 }
 .card_content p {
-    color: #151515;
+    color: #000000;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 0;
+    font-weight: bold;
+    font-family: "Dubai-Light";
 }
 .card_content span {
     display: block;
-    margin-top: 38px;
     font-size: 12px;
-    color: #1B1B1B;
+    color: #000000;
     font-weight: bold;
 }
+.card_content .span h4{
+  color:#000000;
+}
+.card_content .span{
+    margin-top: 55px;
+}
+.cardinfo_content .span{
+    margin-top: 50px;
+}
 .card_info a {
-    color: #202020;
+    color: #000000;
 }
 .cardinfo_content p {
-    color: #131313;
+    color: #000000;
     margin-bottom: 0;
     text-transform: uppercase;
     font-size: 14px;
 }
-.balance {
+.cardinfo_content .balance {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
+    font-family: "Dubai-Light";
 }
 .cardinfo_content button {
     background: #FCCE70;
     border: 1px solid #FCCE70;
-    margin-top: 27px;
     text-transform: capitalize;
     padding: 3% 8%;
 }
@@ -402,27 +424,54 @@ ul li.bell-notification a {
 }
 .transfer {
     display: inline-block;
-    width: 24%;
+    width: 100%;
     text-align: center;
-    border-left: 2px solid #E2E2E2;
+    padding: 40px;
 }
 .transfer-funds {
     background: #FEFEFE;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    padding: 3%;
+    text-align: center;
 }
-.transfer:first-child {
-    border-left: 0;
+.transfer::after{
+  content: '';
+  height: 100px;
+  border-right: 1px solid #bbb;
+  right: 0;
+  position: absolute;
+  top: 30%;
+}
+.transfer-funds:last-child .transfer::after{
+  border-right: 1px solid transparent;
 }
 .transfer p {
     text-transform: capitalize;
     margin-top: 9px;
+    font-size: 18px;
+    color: #000;
 }
 .transfer img:hover {
     background: #FCCE70;
     cursor: pointer;
 }
-/*3rd April CSS ends */
-
-/*3rd April CSS ends */
+.dashboard-heading {
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #000000;
+}
+.image {
+    width: 100%;
+    cursor: pointer;
+    height: 121px;
+    background: url('../images/customer-dashboard/normal.png')no-repeat;
+}
+.image:hover {
+    width: 100%;
+    height: 121px;
+    cursor: pointer;
+    background: url('../images/customer-dashboard/hover.png')no-repeat;
+}
+.tab-content {
+    display: inline-block;
+    margin-bottom: 50px;
+}
