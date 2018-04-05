@@ -20,7 +20,7 @@
 }
 /* Body Css Starts here*/
 body{
-	background:#fff url('../images/customer-dashboard/customer-bg.jpg') no-repeat;
+	background:#E9DCD3 url('../images/customer-dashboard/customer-bg.jpg') no-repeat;
 	font-family: "Dubai-Regular";
 	font-size: 16px;
 }
@@ -353,6 +353,7 @@ ul li.bell-notification a {
 /*3rd April CSS */
 .propic {
     display: inline-block;
+    width: 35%;
 }
 .card_content {
     display: inline-block;
@@ -463,13 +464,30 @@ ul li.bell-notification a {
     width: 100%;
     cursor: pointer;
     height: 121px;
-    background: url('../images/customer-dashboard/normal.png')no-repeat;
 }
-.image:hover {
-    width: 100%;
-    height: 121px;
-    cursor: pointer;
-    background: url('../images/customer-dashboard/hover.png')no-repeat;
+.image.tranfer{
+    background: url('../images/customer-dashboard/Tfund.png')no-repeat;
+}
+.image.tranfer:hover {
+    background: url('../images/customer-dashboard/Tfund1.png')no-repeat;
+}
+.image.pay-bil{
+    background: url('../images/customer-dashboard/Pay-bills.png')no-repeat;
+}
+.image.pay-bil:hover {
+    background: url('../images/customer-dashboard/Pay-bills1.png')no-repeat;
+}
+.image.e-charge{
+    background: url('../images/customer-dashboard/e-charge.png')no-repeat;
+}
+.image.e-charge:hover {
+    background: url('../images/customer-dashboard/e-charge1.png')no-repeat;
+}
+.image.e-Mal{
+    background: url('../images/customer-dashboard/emal.png')no-repeat;
+}
+.image.e-Mal:hover {
+    background: url('../images/customer-dashboard/emal1.png')no-repeat;
 }
 .tab-content {
     display: inline-block;
