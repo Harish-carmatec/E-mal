@@ -509,143 +509,83 @@ footer {
   border-color: #fff;
   transform: translateX(0px) rotate(360deg);
 }
-/*customer-admin CSS starts */
-.customer-dashboard .navbar {
-    border-radius: 0;
-    border-bottom: 0px solid #6E686B;
-    min-height: 100px;
-    margin-bottom: 0px;
-}
-.customer-dashboard .navbar-nav.login-menu li.language a {
-    color: #777;
-}
-ul li.bell-notification .fa.fa-bell {
-    color: #F7D065;
-    font-size: 24px;
-}
-ul li.bell-notification a {
-    position: relative;
-}
-.bel-count {
-    background: #4B4B4B;
-    border-radius: 50%;
-    padding: 3px;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    line-height: 15px;
-    text-align: center;
-}
-ul li.bell-notification a {
-    position: relative;
-}
-.nav.nav-pills li a {
-    color: #1F1F1F;
-    font-size: 18px;
-    font-family: Dubai-Regular;
-    text-transform: capitalize;
-    padding: 20px 0px 20px 30px;
-}
-.nav.nav-pills li a i{
-    margin-right: 10px;
-}
-.nav.nav-pills li.active a {
-    border-radius: 0px;
-    background: #fff;
-}
-.nav.nav-pills li.active{
-    background:#fff;
-}
-.nav-stacked li {
-    background: #F7D065;
-}
-/*3rd April CSS */
-.propic {
-    height: 105px;
-    display: inline-block;
-    width: 32%;
-}
-.card_content {
-    display: inline-block;
-    width: 55%;
-    vertical-align: top;
-    float: right;
-}
-.cardinfo_content{
-     display: inline-block;
-    width: 55%;
-    vertical-align: top;
-    float: right;
-}
-.main_wrapper {
-    background: #EFE4DE;
-}
-.card_info {
-    background: #FEFEFE;
-    padding: 7% 5%;
-}
-.card_content p {
-    color: #151515;
-    text-transform: uppercase;
-    font-size: 15px;
-    margin-bottom: 0;
-}
-.card_content span {
-    display: block;
-    margin-top: 38px;
-    font-size: 12px;
-    color: #1B1B1B;
-    font-weight: bold;
-}
-.card_info a {
-    color: #202020;
-}
-.cardinfo_content p {
-    color: #131313;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-.balance {
-    font-weight: bold;
-    font-size: 12px;
-}
-.cardinfo_content button {
-    background: #FCCE70;
-    border: 1px solid #FCCE70;
-    margin-top: 27px;
-    text-transform: capitalize;
-    padding: 3% 8%;
-}
-.cardinfo_content .fa.fa-plus {
-    position: relative;
-    top: 2px;
-}
-.transfer {
-    display: inline-block;
-    width: 24%;
-    text-align: center;
-    border-left: 2px solid #E2E2E2;
-}
-.transfer-funds {
-    background: #FEFEFE;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    padding: 3%;
-}
-.transfer:first-child {
-    border-left: 0;
-}
-.transfer p {
-    text-transform: capitalize;
-    margin-top: 9px;
-}
-.transfer img:hover {
-    background: #FCCE70;
-    cursor: pointer;
-}
-/*3rd April CSS ends */
+/*Registration Page*/
 
-/*3rd April CSS ends */
+.nav.navbar-nav.reg-nav > li a, .reg-menu > li >a{
+    color: #0009;
+}
+.login_form {
+    padding: 0px 70px;
+    padding-top:70px;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 8px #888888;
+    display: inline-block;
+
+}
+p.reg_header {
+    font-size: 29px;
+    text-transform: uppercase;
+    text-align: center;
+    /* background: tan; */
+}
+.form-inline > .fm_ctrl {
+    width: 48%;
+}
+.col-xs-12.otp_label {
+    padding: 0;
+    margin: 0px 0 15px;
+}
+.login_form .form-group > .fm_ctrl {
+    border-radius: 1px !important;
+}
+.social-icons-list img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+}
+.social-icons-list img:hover{
+    opacity: 0.8;
+}
+.social-icons-list a {
+    text-decoration: none !important;
+}
+.reg_header::before{
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ce9640;
+    width: 78px;
+    margin: 0 auto;
+    text-align: center;
+    left: auto;
+    right: 251px;
+    margin-left: 20px;
+    top: 80px;
+}
+.form-group.form-inline .form-control:first-child {
+    margin-right: 12px;
+}
+.btn_sub:hover {
+    opacity: 0.8 !important;
+    color: #fff !important;
+}
+.btn_sub:active {
+    color: #fff !important;
+    background-color: #d6a848 !important;
+    border-color: transparent !important;
+}
+.fm_ctrl .btn-default {
+    background: #d6a848; /* Old browsers */
+    background: -moz-linear-gradient(top, #d6a848 0%, #ce9740 31%, #c88e3f 65%, #c38639 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6a848', endColorstr='#c38639',GradientType=0 ); /* IE6-9 */
+    border-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px 30px;
+    font-size: 18px; 
+}
+/*Registration Page Ends*/

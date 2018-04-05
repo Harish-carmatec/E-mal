@@ -23,6 +23,7 @@ body{
 	background:#E9DCD3 url('../images/customer-dashboard/customer-bg.jpg') no-repeat;
 	font-family: "Dubai-Regular";
 	font-size: 16px;
+  background-size: cover;
 }
 .p0{
     padding:0px !important;
@@ -49,7 +50,7 @@ body{
     border-bottom: 2px solid #6E686B;
     min-height: 100px;
 }
-#myNavbar {
+#myNavbar, #mobileMenu {
     padding-top: 25px;
 }
 .navbar-nav > li > a {
@@ -466,28 +467,28 @@ ul li.bell-notification a {
     height: 121px;
 }
 .image.tranfer{
-    background: url('../images/customer-dashboard/Tfund.png')no-repeat;
+    background: url('../images/customer-dashboard/Tfund.png')no-repeat center center;
 }
 .image.tranfer:hover {
-    background: url('../images/customer-dashboard/Tfund1.png')no-repeat;
+    background: url('../images/customer-dashboard/Tfund1.png')no-repeat center center;
 }
 .image.pay-bil{
-    background: url('../images/customer-dashboard/Pay-bills.png')no-repeat;
+    background: url('../images/customer-dashboard/Pay-bills.png')no-repeat center center;
 }
 .image.pay-bil:hover {
-    background: url('../images/customer-dashboard/Pay-bills1.png')no-repeat;
+    background: url('../images/customer-dashboard/Pay-bills1.png')no-repeat center center;
 }
 .image.e-charge{
-    background: url('../images/customer-dashboard/e-charge.png')no-repeat;
+    background: url('../images/customer-dashboard/e-charge.png')no-repeat center center;
 }
 .image.e-charge:hover {
-    background: url('../images/customer-dashboard/e-charge1.png')no-repeat;
+    background: url('../images/customer-dashboard/e-charge1.png')no-repeat center center;
 }
 .image.e-Mal{
-    background: url('../images/customer-dashboard/emal.png')no-repeat;
+    background: url('../images/customer-dashboard/emal.png')no-repeat center center;
 }
 .image.e-Mal:hover {
-    background: url('../images/customer-dashboard/emal1.png')no-repeat;
+    background: url('../images/customer-dashboard/emal1.png')no-repeat center center;
 }
 .tab-content {
     display: inline-block;
