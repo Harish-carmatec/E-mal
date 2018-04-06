@@ -597,9 +597,39 @@ width: 100%;
     border-radius: 24px;
     color: #fff;
     margin-top: 5px;
-    padding: 5px 50px;
+    padding: 10px 50px;
     font-size: 16px; 
     margin-bottom: 15px;
+}
+#savedcard .radio-inline .card-detls {
+    display: block;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+#savedcard .radio-inline .card-detls span {
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+#savedcard .control-group {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.cvv-no .form-control {
+    width: 40%;
+    height: 40px;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0;
+  }
+  #savedcard input[type="radio"] {
+    margin-top: 12px;
 }
 @media screen and (max-width: 480px) {
     .payment-tab-sec .tabs {

@@ -53,9 +53,6 @@
     </header> 
     <section class="body-content">
     	<div class="row">
-    <!-- uncomment code for absolute positioning tweek see top comment in css -->
-    <!-- <div class="absolute-wrapper"> </div> -->
-    <!-- Menu -->
         <div class="side-menu">
           <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
@@ -240,8 +237,43 @@
                           <!-- #tab1 -->
                           <h3 class="tab_drawer_heading" rel="tab2">saved card</h3>
                           <div id="savedcard" class="tab_content">
-                          <h2>Tab 2 content</h2>
-                            <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate.</p>
+                            <div class="col-sm-6 p0">
+                              <form>
+                                <div class="control-group">
+                                  <div class="col-md-7 p0 crd-no">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optradio">
+                                      <p class="card-detls">
+                                        <span>xxxx-xxxx-xxxx-1616</span>
+                                        <span>harish cn</span>
+                                      </p>
+                                    </label>
+                                  </div>
+                                  <div class="col-md-5 pr0 cvv-no">
+                                    <input class="form-control pull-left" autocomplete="off" maxlength="3" placeholder="CVV" required="" type="text">
+                                  </div>
+                                </div>
+                                <div class="control-group">
+                                  <div class="col-md-7 p0 crd-no">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="optradio">
+                                      <p class="card-detls">
+                                        <span>xxxx-xxxx-xxxx-1616</span>
+                                        <span>harish cn</span>
+                                      </p>
+                                    </label>
+                                  </div>
+                                  <div class="col-md-5 pr0 cvv-no">
+                                    <input class="form-control pull-left" autocomplete="off" maxlength="3" placeholder="CVV" required="" type="text">
+                                  </div>
+                                </div>
+                                <div class="control-group">
+                                  <div class="controls">
+                                    <button type="submit" class="btn btn-emal">Pay</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
                           </div>
                           <!-- #tab2 -->
                           <h3 class="tab_drawer_heading" rel="tab3">credit card</h3>
