@@ -602,6 +602,28 @@
   .cardinfo_content .span {
       margin-top: 26px;
   }
+  .payment-tab-sec .tabs {
+        display: none;
+    }
+    .payment-tab-sec .tab_drawer_heading {
+        background-color: #ccc;
+        color: #fff;
+        border-top: 1px solid #333;
+        margin: 0;
+        padding: 5px 20px;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .payment-tab-sec .d_active {
+        background-color: #666;
+        color: #fff;
+    }
 }
 @media (max-width:420px){
   .accout-del-sec .col-xs-6 {

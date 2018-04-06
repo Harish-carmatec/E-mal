@@ -43,6 +43,9 @@ body{
 .pr0{
   padding-right: 0px;
 }
+.pl0{
+  padding-left: 0px;
+}
 .body-content {
     margin-top: 100px;
 }
@@ -462,7 +465,7 @@ ul li.bell-notification a {
     cursor: pointer;
 }
 .dashboard-heading {
-    margin-top: 60px;
+    margin-top: 10px;
     text-transform: uppercase;
     font-size: 30px;
     color: #000000;
@@ -497,8 +500,8 @@ ul li.bell-notification a {
     background: url('../images/customer-dashboard/emal1.png')no-repeat center center;
 }
 .tab-content {
-    display: inline-block;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 /*Topup Wallet Page starts*/
 .top-up-del-sec {
@@ -506,6 +509,9 @@ ul li.bell-notification a {
   box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1);
   display: inline-block;
 width: 100%;
+}
+.tad-content-outer {
+    display: block;
 }
 .top-up-del-sec .sub-heading {
     margin-top: 30px;
@@ -516,9 +522,11 @@ width: 100%;
     color: #000;
 }
 .top-up-del-sec .payment-tab-sec {
-    margin-left: 30px;
+    padding: 0px 30px;
     margin-top: 30px;
-    display: inline-block;
+    display: block;
+    float: left;
+    width: 100%;
 }
 .payment-tab-sec ul.tabs {
   margin: 0;
@@ -571,17 +579,22 @@ width: 100%;
 .payment-tab-sec .tab_drawer_heading { 
   display: none; 
 }
-#addcard .control-label {
+#addcard .control-label, #changepassword .control-label, #editprofile .control-label {
     font-weight: 400;
     color: #333;
     margin-bottom: 0px;
+}
+.customer-dashboard .controls .form-control {
+    border-radius: 0px;
+    border: 2px solid #eee;
+    box-shadow: none;
 }
 #addcard .controls .form-control {
     border-radius: 0px;
     border: 2px solid #eee;
     box-shadow: none;
 }
-#addcard .control-group .controls {
+#addcard .control-group .controls, #changepassword .control-group .controls, #editprofile .control-group .controls {
     margin-bottom: 15px;
 }
 #addcard .control-group .radio-inline {
@@ -625,34 +638,60 @@ width: 100%;
     font-size: 16px;
     line-height: 1.42857143;
     color: #333;
-    border: 1px solid #ccc;
+    border: 2px solid #eee;
     border-radius: 0;
-  }
-  #savedcard input[type="radio"] {
+    box-shadow: none;
+}
+#changepassword .form-control, #addcard .form-control, #editprofile .form-control {
+    width: 100%;
+    height: 40px;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    border: 2px solid #eee;
+    border-radius: 0;
+}
+#savedcard input[type="radio"] {
     margin-top: 12px;
 }
-@media screen and (max-width: 480px) {
-    .payment-tab-sec .tabs {
-        display: none;
-    }
-    .payment-tab-sec .tab_drawer_heading {
-        background-color: #ccc;
-        color: #fff;
-        border-top: 1px solid #333;
-        margin: 0;
-        padding: 5px 20px;
-        display: block;
-        cursor: pointer;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-    .payment-tab-sec .d_active {
-        background-color: #666;
-        color: #fff;
-    }
+.wal-balance {
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 30px;
+}
+.wal-balance img{
+  display: inline-block;
+}
+.wal-balance h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.wal-balance h2 {
+    margin-top: 0px;
+    font-size: 24px;
+}
+.wal-balance a {
+    background: #f7d95d;
+    padding: 5px 30px;
+    text-transform: capitalize;
+    color: #333;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.wal-balance a:hover{
+  text-decoration: none;
+}
+.profile-img-upload #image_upload_preview {
+    width: 100px;
+    height: auto;
+}
+.trigger {
+    text-align: center;
+    margin-top: 15px;
+}
+#inputFile {
+ display: none;
 }
 /*Topup Wallet Page starts*/

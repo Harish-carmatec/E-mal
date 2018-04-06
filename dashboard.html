@@ -115,7 +115,8 @@
         </div>
         <div class="container-fluid p0">
           <div class="side-body">
-            <div class="tab-content">
+          <!-- <div class="tad-content-outer"> -->
+            <div class="tab-content clearfix">
               <div class="tab-pane fade in active" id="dashboard">
                 <div class="col-md-12 heading_wrapper mb20 mt0">
                   <h3 class="dashboard-heading">dashboard</h3>
@@ -191,14 +192,14 @@
                           <li rel="debitcard">debit card</li>
                         </ul>
                         <div class="tab_container">
-                          <h3 class="d_active tab_drawer_heading" rel="tab1">add card details</h3>
+                          <h3 class="d_active tab_drawer_heading" rel="addcard">add card details</h3>
                           <div id="addcard" class="tab_content">
-                            <div class="col-sm-6 p0">
+                            <div class="col-sm-4 p0">
                               <form>
                                 <div class="control-group">
                                   <label label-default="" class="control-label">Enter Card Number</label>
                                   <div class="controls">
-                                      <input class="form-control" autocomplete="off" maxlength="16" pattern="\d{16}" title="XXXXXXXXXXXXXXXX" required="" type="text">
+                                      <input class="form-control" autocomplete="off" maxlength="16"  title="XXXXXXXXXXXXXXXX" required="" type="text">
                                   </div>
                                 </div>
                                 <div class="control-group">
@@ -235,7 +236,7 @@
                             </div>
                           </div>
                           <!-- #tab1 -->
-                          <h3 class="tab_drawer_heading" rel="tab2">saved card</h3>
+                          <h3 class="tab_drawer_heading" rel="savedcard">saved card</h3>
                           <div id="savedcard" class="tab_content">
                             <div class="col-sm-6 p0">
                               <form>
@@ -276,13 +277,13 @@
                             </div>
                           </div>
                           <!-- #tab2 -->
-                          <h3 class="tab_drawer_heading" rel="tab3">credit card</h3>
+                          <h3 class="tab_drawer_heading" rel="creditcard">credit card</h3>
                           <div id="creditcard" class="tab_content">
                           <h2>Tab 3 content</h2>
                             <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
                           </div>
                           <!-- #tab3 -->
-                          <h3 class="tab_drawer_heading" rel="tab4">debit card</h3>
+                          <h3 class="tab_drawer_heading" rel="debitcard">debit card</h3>
                           <div id="debitcard" class="tab_content">
                           <h2>Tab 4 content</h2>
                             <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
@@ -307,10 +308,10 @@
                           <li rel="editprofile">edit profile</li>
                         </ul>
                         <div class="tab_container">
-                          <h3 class="d_active tab_drawer_heading" rel="tab1">add card details</h3>
+                          <h3 class="d_active tab_drawer_heading" rel="changepassword">add card details</h3>
                           <div id="changepassword" class="tab_content">
-                            <div class="col-md-12">
-                            <div class="col-sm-9 p0">
+                            <div class="col-md-12 p0">
+                            <div class="col-sm-8 pl0">
                               <form>
                                 <div class="control-group">
                                   <label label-default="" class="control-label">Enter Your Old Password</label>
@@ -331,24 +332,93 @@
                                   </div>
                                 </div>                               
                                 <div class="control-group">
-                                  <label label-default="" class="control-label"></label>
                                   <div class="controls">
                                     <button type="submit" class="btn btn-emal">Pay</button>
                                   </div>
                                 </div>
                               </form>
                             </div>
-                            <div class="col-md-3">
-                              <div class="wal-balance">
+                            <div class="col-md-4 pr0">
+                              <div class="wal-balance text-center">
                                 <img src="assets/images/customer-dashboard/wallet.png" alt="wallet" class="img-responsive">
+                                <h4>wallet  balance</h4>
+                                <h2>AED 75.00</h2>
+                                <a href="">top up wallet</a>
                               </div>
                             </div>
                           </div>
                           </div>
                           <!-- #tab1 -->
-                          <h3 class="tab_drawer_heading" rel="tab2">edit profile</h3>
+                          <h3 class="tab_drawer_heading" rel="editprofile">edit profile</h3>
                           <div id="editprofile" class="tab_content">
-
+                            <div class="col-md-12 p0">
+                              <div class="col-md-2">
+                                <div class="profile-img-upload">
+                                    <img id="image_upload_preview" src="assets/images/customer-dashboard/profile_default.png" alt="your image" />
+                                    <input type='file' id="inputFile" />
+                                    <p class="trigger">Choose file</p>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 pl0">
+                                <form>
+                                  <div class="control-group">
+                                  <div class="col-sm-6 pl0">
+                                    <label label-default="" class="control-label">First Name</label>
+                                    <div class="controls">
+                                        <input class="form-control" autocomplete="off" placeholder=" " required="" type="text">
+                                    </div>
+                                    </div>
+                                    <div class="col-sm-6 pr0">
+                                    <label label-default="" class="control-label">Last Name</label>
+                                    <div class="controls">
+                                        <input class="form-control" autocomplete="off" placeholder=" " required="" type="text">
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label label-default="" class="control-label">Email ID</label>
+                                    <div class="controls">
+                                        <input class="form-control" required="" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label label-default="" class="control-label">Phone Number</label>
+                                    <div class="controls">
+                                        <input class="form-control" required="" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                  <div class="col-sm-6 pl0">
+                                    <label label-default="" class="control-label">AED</label>
+                                    <div class="controls">
+                                        <input class="form-control" autocomplete="off" placeholder=" " required="" type="text">
+                                    </div>
+                                    </div>
+                                    <div class="col-sm-6 pr0">
+                                    <label label-default="" class="control-label">Date</label>
+                                    <div class="input-group date" data-provide="datepicker">
+                                        <input type="date" class="form-control">
+                                        <div class="input-group-addon">
+                                            <span class="glyphicon glyphicon-th"></span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                  </div>  
+                                  <div class="control-group">
+                                    <input type="radio" name="gender" value="male"> Male
+                                    <input type="radio" name="gender" value="female"> Female
+                                  </div>                          
+                                </form>
+                              </div>
+                              <div class="col-md-4 pr0">
+                                <div class="wal-balance text-center">
+                                  <img src="assets/images/customer-dashboard/wallet.png" alt="wallet" class="img-responsive">
+                                  <h4>wallet  balance</h4>
+                                  <h2>AED 75.00</h2>
+                                  <a href="">top up wallet</a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <!-- #tab2 -->
                         </div>
@@ -378,16 +448,17 @@
                 </div>      
               </div>
             </div>
+            <!-- </div> -->
           </div>
         </div>
     </div>
   </section>
     <!-- Scripts files -->
-    <script src="assets/js/jquery.min.js" async ></script>
+    <script src="assets/js/jquery.min.js" defer></script>
     <script src="assets/js/viewportchecker.js" defer></script>
-    <script src="assets/js/bootstrap.min.js" async></script>
-    <script src="assets/js/slick.js" async></script>
-    <script src="assets/js/customer-dashboard.js"></script>
-    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/slick.js" defer></script>
+    <script src="assets/js/customer-dashboard.js" defer></script>
+    <script src="assets/js/animation.js" defer></script>
   </body>
 </html>
