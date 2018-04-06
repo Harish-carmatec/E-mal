@@ -589,3 +589,37 @@ p.reg_header {
     font-size: 18px; 
 }
 /*Registration Page Ends*/
+/*signin Page css starts*/
+.signin_form {
+    padding: 60px 60px;
+    box-shadow: 0px 0px 5px;
+    margin-top: 42px;
+    margin-bottom: 90px;
+}
+.fgt_pwd{
+    margin-top: -13px;
+    font-size: 12px;
+}
+
+.signin_form .reg_header::before{
+    right: 261px;
+    width: 61px;
+    top: 90px;
+}
+.signin_btn {
+    padding: 7px 48px;
+}
+.fgt_pwd a {
+    color: #000000c2;
+}
+.form-group.otp_txt span {
+    font-size: 12px;
+    font-style: italic;
+}
+.form-group.otp_txt {
+    margin-bottom: 0px;
+}
+.otp_img {
+    padding: 20px 0px;
+}
+/*signin page css ends*/
