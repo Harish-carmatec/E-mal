@@ -188,15 +188,15 @@
                     <div class="col-xs-12 p0">
                       <div class="payment-tab-sec">
                         <ul class="tabs">
-                          <li class="active" rel="tab1">add card details</li>
-                          <li rel="tab2">saved card</li>
-                          <li rel="tab3">credit card</li>
-                          <li rel="tab4">debit card</li>
+                          <li class="active" rel="addcard">add card details</li>
+                          <li rel="savedcard">saved card</li>
+                          <li rel="creditcard">credit card</li>
+                          <li rel="debitcard">debit card</li>
                         </ul>
                         <div class="tab_container">
                           <h3 class="d_active tab_drawer_heading" rel="tab1">add card details</h3>
-                          <div id="tab1" class="tab_content">
-                            <div class="col-sm-6">
+                          <div id="addcard" class="tab_content">
+                            <div class="col-sm-6 p0">
                               <form>
                                 <div class="control-group">
                                   <label label-default="" class="control-label">Enter Card Number</label>
@@ -211,17 +211,17 @@
                                   </div>
                                 </div>                               
                                 <div class="control-group">
-                                    <label label-default="" class="control-label">Valid Upto</label>
-                                    <div class="controls">
-                                        <div class="row">
-                                            <div class="col-md-8 p0">
-                                                <input class="form-control" autocomplete="off" placeholder="mm/yy" required="" type="text">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <input class="form-control" autocomplete="off" maxlength="3" placeholder="CVV" required="" type="text">
-                                            </div>
-                                        </div>
+                                  <label label-default="" class="control-label">Valid Upto</label>
+                                  <div class="controls">
+                                    <div class="row">
+                                      <div class="col-md-8 p0">
+                                          <input class="form-control" autocomplete="off" placeholder="mm/yy" required="" type="text">
+                                      </div>
+                                      <div class="col-md-4 pr0">
+                                          <input class="form-control" autocomplete="off" maxlength="3" placeholder="CVV" required="" type="text">
+                                      </div>
                                     </div>
+                                  </div>
                                 </div>
                                 <div class="control-group">
                                   <label class="radio-inline">
@@ -231,27 +231,27 @@
                                 <div class="control-group">
                                   <label label-default="" class="control-label"></label>
                                   <div class="controls">
-                                    <button type="submit" class="btn btn-primary">Pay</button>
+                                    <button type="submit" class="btn btn-emal">Pay</button>
                                   </div>
                                 </div>
-                                  </form>
-                              </div>
+                              </form>
+                            </div>
                           </div>
                           <!-- #tab1 -->
                           <h3 class="tab_drawer_heading" rel="tab2">saved card</h3>
-                          <div id="tab2" class="tab_content">
+                          <div id="savedcard" class="tab_content">
                           <h2>Tab 2 content</h2>
                             <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate.</p>
                           </div>
                           <!-- #tab2 -->
                           <h3 class="tab_drawer_heading" rel="tab3">credit card</h3>
-                          <div id="tab3" class="tab_content">
+                          <div id="creditcard" class="tab_content">
                           <h2>Tab 3 content</h2>
                             <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
                           </div>
                           <!-- #tab3 -->
                           <h3 class="tab_drawer_heading" rel="tab4">debit card</h3>
-                          <div id="tab4" class="tab_content">
+                          <div id="debitcard" class="tab_content">
                           <h2>Tab 4 content</h2>
                             <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
                           </div>
@@ -262,7 +262,6 @@
                   </div>
                  </div>
                 </div>    
-              </div>
               <div class="tab-pane fade" id="myprofile">
                 <div class="col-md-12 heading_wrapper mb20 mt0">
                   <h3 class="dashboard-heading">my profile</h3>
