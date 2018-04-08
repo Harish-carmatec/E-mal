@@ -12,6 +12,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11,fc-3.2.1/datatables.min.css">
     <link href="assets/css/customer-dashboard.css" rel="stylesheet">
     <link href="assets/css/animation.css" rel="stylesheet">
     <link href="assets/css/customer-dashboard-responsive.css" rel="stylesheet">
@@ -83,18 +84,6 @@
                   <a href="">
                     <span><img src="assets/images/customer-dashboard/my-profile.png" alt="my profile"></span>
                     my profile
-                  </a>
-                </li>
-                <li class="" href="#changepassword" data-toggle="tab">
-                  <a href="">
-                   <span><img src="assets/images/customer-dashboard/change-password.png" alt="change password"></span>
-                    change password
-                  </a>
-                </li>
-                <li class="" href="#qrcode" data-toggle="tab">
-                  <a href="">
-                    <span><img src="assets/images/customer-dashboard/QR-code.png" alt="qr code"></span>
-                    QR code
                   </a>
                 </li>
                 <li class="" href="#savedcards" data-toggle="tab">
@@ -405,9 +394,27 @@
                                     </div>
                                   </div>  
                                   <div class="control-group">
-                                    <input type="radio" name="gender" value="male"> Male
-                                    <input type="radio" name="gender" value="female"> Female
-                                  </div>                          
+                              <div class="col-sm-12 p0">
+                                  <div class="gender-area">
+                                    <label class="radio-inline">
+                                      <input name="gender" type="radio" value="male">Male
+                                    </label>
+                                  </div>
+                                  <div class="gender-area">
+                                    <label class="radio-inline">
+                                      <input name="gender" type="radio" value="female">Female
+                                    </label>
+                                  </div>
+                                </div>    
+                                  </div>   
+                                  <div class="control-group">
+                                    <div class="col-sm-6 p0 mt30 mb30">
+                                      <button type="submit" class="btn-emal">save</button>
+                                    </div>
+                                    <div class="col-sm-6 p0 mt30 mb30">
+                                      <button type="text" class="btn-emal btn-cancel pull-right">cancel</button>
+                                    </div>
+                                  </div>                       
                                 </form>
                               </div>
                               <div class="col-md-4 pr0">
@@ -427,25 +434,194 @@
                   </div>
                  </div>      
               </div>
-              <div class="tab-pane fade" id="changepassword">
-                <div class="col-md-12 heading_wrapper mb20 mt0">
-                  <h3 class="dashboard-heading">change password</h3>
-                </div>      
-              </div>
-              <div class="tab-pane fade" id="qrcode">
-                <div class="col-md-12 heading_wrapper mb20 mt0">
-                  <h3 class="dashboard-heading">QR code</h3>
-                </div>      
-              </div>
               <div class="tab-pane fade" id="savedcards">
                 <div class="col-md-12 heading_wrapper mb20 mt0">
                   <h3 class="dashboard-heading">saved cards</h3>
-                </div>      
+                </div> 
+                <div class="col-xs-12">
+                  <div class="top-up-del-sec">
+                    <div class="col-xs-12 p0">
+                      <div class="payment-tab-sec">
+                        <ul class="tabs">
+                          <li class="active" rel="savedcarddel">saved card</li>
+                        </ul>
+                        <div class="tab_container">
+                          <h3 class="d_active tab_drawer_heading" rel="savedcarddel">saved card details</h3>
+                          <div id="savedcarddel" class="tab_content">
+                            <div class="col-sm-6 p0">
+                              <form>
+                                <div class="control-group">
+                                  <div class="col-md-7 p0 crd-no">
+                                      <p class="card-detls">
+                                        <span>xxxx-xxxx-xxxx-1616</span>
+                                        <span>harish cn</span>
+                                      </p>
+                                  </div>
+                                  <div class="col-md-5 pr0 crd-rmve">
+                                    <p><i class="fa fa-trash-o" aria-hidden="true"></i>remove</p>
+                                  </div>
+                                </div>
+                                <div class="control-group">
+                                <div class="col-md-7 p0 crd-no">
+                                      <p class="card-detls">
+                                        <span>xxxx-xxxx-xxxx-1616</span>
+                                        <span>harish cn</span>
+                                      </p>
+                                  </div>
+                                  <div class="col-md-5 pr0 crd-rmve">
+                                    <p><i class="fa fa-trash-o" aria-hidden="true"></i>remove</p>
+                                  </div>
+                                  </div>
+
+                                <div class="control-group">
+                                  <div class="controls">
+                                    <button type="submit" class="btn btn-emal">add a card</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <!-- #tab1 -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>      
               </div>
               <div class="tab-pane fade" id="mytransactions">
                 <div class="col-md-12 heading_wrapper mb20 mt0">
                   <h3 class="dashboard-heading">my transactions</h3>
-                </div>      
+                </div>  
+                  <div class="col-xs-12">
+                  <div class="top-up-del-sec">
+                    <div class="col-xs-12 p0">
+                      <div class="payment-tab-sec">
+                        <ul class="tabs">
+                          <li class="active" rel="e-wallet">e-wallet</li>
+                          <li rel="transactions">transactions</li>
+                        </ul>
+                        <div class="tab_container">
+                          <h3 class="d_active tab_drawer_heading" rel="e-wallet">e-wallet</h3>
+                          <div id="e-wallet" class="tab_content">
+                            <table id="e-wallet-table" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          <!-- #tab1 -->
+                          <h3 class="tab_drawer_heading" rel="transactions">transactions</h3>
+                          <div id="transactions" class="tab_content">
+                            <table id="transactions-table" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          <!-- #tab2 -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div> 
               </div>
             </div>
             <!-- </div> -->
@@ -455,6 +631,8 @@
   </section>
     <!-- Scripts files -->
     <script src="assets/js/jquery.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11,fc-3.2.1/datatables.min.js">
+  </script>
     <script src="assets/js/viewportchecker.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/slick.js" defer></script>

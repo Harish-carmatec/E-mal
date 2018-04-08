@@ -69,3 +69,14 @@ $("#inputFile").change(function () {
     readURL(this);
 });
 
+$(document).ready(function() {
+    $('#e-wallet-table, #transactions-table').DataTable({
+      "paging":   false,
+        "ordering": false,
+        "info":     false,
+        "scrollY":        "200px",
+        "fixedColumns":   true,
+        "scrollCollapse": true,
+        "searching": false
+    });
+} );

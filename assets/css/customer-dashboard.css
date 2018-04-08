@@ -37,6 +37,9 @@ body{
 .mt30{
   margin-top: 30px;
 }
+.mb30{
+  margin-bottom: 30px;
+}
 .ml15{
   margin-left: 15px;
 }
@@ -597,7 +600,7 @@ width: 100%;
 #addcard .control-group .controls, #changepassword .control-group .controls, #editprofile .control-group .controls {
     margin-bottom: 15px;
 }
-#addcard .control-group .radio-inline {
+#addcard .control-group .radio-inline, .gender-area .radio-inline {
     line-height: 26px;
 }
 .btn-emal{
@@ -613,6 +616,22 @@ width: 100%;
     padding: 10px 50px;
     font-size: 16px; 
     margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.btn-cancel{
+  background: #c2c2c2; /* Old browsers */
+background: -moz-linear-gradient(top, #c2c2c2 0%, #bbbbbb 34%, #adadad 66%, #acacac 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #c2c2c2 0%,#bbbbbb 34%,#adadad 66%,#acacac 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #c2c2c2 0%,#bbbbbb 34%,#adadad 66%,#acacac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', endColorstr='#acacac',GradientType=0 );
+    border-color: transparent;
+    border-radius: 24px;
+    color: #fff;
+    margin-top: 5px;
+    padding: 10px 50px;
+    font-size: 16px; 
+    margin-bottom: 15px;
+    text-transform: capitalize;
 }
 #savedcard .radio-inline .card-detls {
     display: block;
@@ -690,8 +709,38 @@ width: 100%;
 .trigger {
     text-align: center;
     margin-top: 15px;
+    cursor: pointer;
 }
 #inputFile {
  display: none;
+}
+.gender-area {
+    display: inline-block;
+    margin-right: 30px;
+}
+.gender-area .radio-inline input{
+    margin-right: 10px;
+}
+#savedcarddel .card-detls span {
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+#savedcarddel .card-detls {
+    display: block;
+}
+#savedcarddel .control-group {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#savedcarddel .crd-rmve p {
+    margin-top: 0px;
+    text-align: center;
+    color: #bbb;
+    text-transform: capitalize;
+}
+#savedcarddel .crd-rmve p i{
+  padding-right: 10px;
 }
 /*Topup Wallet Page starts*/
