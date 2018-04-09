@@ -1,9 +1,24 @@
+
+function setActive (){
+  $(".tab_content").hide();
+  $('.side-body .tab_container').each(function(){
+		$(this).children('.tab_content:first').show()
+  });
+  $('.side-body ul.tabs li').removeClass('active')
+  $('.side-body ul.tabs li:first-child').addClass("active");
+}
+
+
 $(document).ready(function() {
    // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
 
+ setActive();
+
+
+	$('.side-menu-container ul li a').click(function(){
+		setActive()
+	})
   /* if in tab mode */
     $("ul.tabs li").click(function() {
 		
@@ -36,9 +51,9 @@ $(document).ready(function() {
 	/* Extra class "tab_last" 
 	   to add border to right side
 	   of last tab */
-	$('ul.tabs li').last().addClass("tab_last");
-	
-});
+
+	$('.side-body ul.tabs li:last-child').addClass("tab_last");
+
 $(function () {
     $('.side-menu .navbar-toggle').click(function () {
         $('.navbar-nav').toggleClass('slide-in');
@@ -68,15 +83,8 @@ function readURL(input) {
 $("#inputFile").change(function () {
     readURL(this);
 });
-
 $(document).ready(function() {
-    $('#e-wallet-table, #transactions-table').DataTable({
-      "paging":   false,
-        "ordering": false,
-        "info":     false,
-        "scrollY":        "200px",
-        "fixedColumns":   true,
-        "scrollCollapse": true,
-        "searching": false
-    });
-} );
+    $('#startdate , #enddate').datepicker();
+});
+
+});

@@ -518,6 +518,15 @@
   #dropdown .panel-body .navbar-nav {
     margin: 0;
   }
+  /*Topup Wallet Page starts*/
+  .pre-amt-grp{
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    left: 40px;
+    bottom: 11px;
+  }
+  /*Topup Wallet Page ends*/
 }
 
 @media (max-width:767px){
@@ -624,6 +633,15 @@
         background-color: #666;
         color: #fff;
     }
+      /*Topup Wallet Page starts*/
+  .pre-amt-grp{
+    margin: 0 auto;
+    padding: 0px 0px 30px 47px;
+  }
+  .enter_otp_grp {
+    padding: 0px 27px 30px 27px;
+  }
+  /*Topup Wallet Page ends*/
 }
 @media (max-width:420px){
   .accout-del-sec .col-xs-6 {
@@ -632,12 +650,26 @@
   }
 }
 @media (max-width:375px){
-
+/*Topup Wallet Page starts*/
+  .amt_chk:last-child{
+    margin-top:10px;
+  }
+  /*Topup Wallet Page ends*/
 }
 @media (max-width:360px){
 
 }
 @media (max-width:320px){
+   /*Topup Wallet Page starts*/
+.amt_chk{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.wal-img{
+  margin: 0 auto;
+  padding: 0;
+}
+/*Topup Wallet Page endss*/
 .servic-other .transfer-funds {
     width: 100%;
 }

@@ -10,9 +10,9 @@
     <link href="assets/css/slick.css" rel="stylesheet">
     <link href="assets/css/slick-theme.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11,fc-3.2.1/datatables.min.css">
     <link href="assets/css/customer-dashboard.css" rel="stylesheet">
     <link href="assets/css/animation.css" rel="stylesheet">
     <link href="assets/css/customer-dashboard-responsive.css" rel="stylesheet">
@@ -132,7 +132,7 @@
                           <p>Your wallet balance</p>
                           <p class="balance">AED 75.00</p>
                           <div class="span">
-                            <button type="button"><i class="fa fa-plus"></i> &nbsp &nbsp top up money</button>
+                            <button type="button" href="#addmoney" data-toggle="tab"><i class="fa fa-plus"></i> &nbsp &nbsp top up money</button>
                           </div>
                         </div>
                     </div>
@@ -163,7 +163,12 @@
                         <p>e-Mal cards</p>
                       </div>
                     </div>
-                </div>      
+                </div> 
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="col-md-4">
+                    <button type="button"><i class="fa fa-plus"></i> &nbsp; &nbsp; top up money</button>
+                  </div>
+                </div>     
               </div>
               <div class="tab-pane fade" id="topupwallet">
                 <div class="col-md-12 heading_wrapper mb20 mt0">
@@ -177,8 +182,6 @@
                         <ul class="tabs">
                           <li class="active" rel="addcard">add card details</li>
                           <li rel="savedcard">saved card</li>
-                          <li rel="creditcard">credit card</li>
-                          <li rel="debitcard">debit card</li>
                         </ul>
                         <div class="tab_container">
                           <h3 class="d_active tab_drawer_heading" rel="addcard">add card details</h3>
@@ -218,7 +221,7 @@
                                 <div class="control-group">
                                   <label label-default="" class="control-label"></label>
                                   <div class="controls">
-                                    <button type="submit" class="btn btn-emal">Pay</button>
+                                    <button type="button" class="btn btn-emal" data-toggle="tab" href="#payment-otp">Pay</button>
                                   </div>
                                 </div>
                               </form>
@@ -265,25 +268,92 @@
                               </form>
                             </div>
                           </div>
-                          <!-- #tab2 -->
-                          <h3 class="tab_drawer_heading" rel="creditcard">credit card</h3>
-                          <div id="creditcard" class="tab_content">
-                          <h2>Tab 3 content</h2>
-                            <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
-                          </div>
-                          <!-- #tab3 -->
-                          <h3 class="tab_drawer_heading" rel="debitcard">debit card</h3>
-                          <div id="debitcard" class="tab_content">
-                          <h2>Tab 4 content</h2>
-                            <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
-                          </div>
-                          <!-- #tab4 --> 
+                          <!-- #tab2 --> 
                         </div>
                       </div>
                     </div>
                   </div>
                  </div>
-                </div>    
+                </div>
+              <!-- topup wallet add money start-->  
+              <div class="topup-wallet tab-pane fade" id="addmoney">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">TOP UP WALLET</h3>
+                </div>
+                <div class="col-xs-12">
+                  <div class="top-up-del-sec mb10">
+                    <div class="col-xs-12 p0">
+                      <div class="col-md-12 col-xs-12">
+                        <div class="col-md-2 col-sm-3 col-xs-4 wal-img">
+                          <img src="assets/images/wallet.png">
+                        </div>
+                        <div class="col-md-10 col-sm-8 wal-bal">
+                          <h5>AVAILABLE WALLET BALANCE</h5>
+                          <strong>AED 75.00</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="top-up-del-sec">
+                    <div class="col-xs-12 p0">
+                      <div class="col-md-4 col-xs-12 add-amt">
+                        <label>Enter amount</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-8 col-xs-12 pre-amt-grp">
+                        <button class="amt_chk">AED 100</button>
+                        <button class="amt_chk">AED 250</button>
+                        <button class="amt_chk">AED 500</button>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 add_btn_grp">
+                      <button class="btn btn-default add_money_btn">Add Money</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- topup wallet add money end-->
+              <!-- payment gateway enter OTP start-->
+              <div class="topup-wallet tab-pane fade" id="payment-otp">
+                <div class="col-md-12 heading_wrapper mb20 mt0">
+                  <h3 class="dashboard-heading">ENTER OTP</h3>
+                </div>
+                <div class="col-xs-12">
+                  <div class="top-up-del-sec">
+                    <div class="col-xs-12 p0">
+                      <div class="col-md-12 col-xs-12 add-amt">
+                        <label>Payment Gateway</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 add_btn_grp">
+                      <div class="row">
+                        <p><label class="col-md-3 col-xs-6 pl0">Date:</label><span class="col-md-9 col-xs-6">2 Apr, 2018</span></p>
+                      </div>
+                      <div class="row">
+                        <p><label class="col-md-3 col-xs-6 pl0">Card Number:</label><span class="col-md-9 col-xs-6">**** **** **** 4899</span></p>
+                      </div>
+                      <div class="row">
+                        <p><label class="col-md-3 col-xs-6 pl0">Mercant Name:</label><span class="col-md-9 col-xs-6">Martin Guptil</span></p>
+                      </div>
+                      <div class="row">
+                        <p><label class="col-md-3 col-xs-6 pl0">Amount:</label><span class="col-md-9 col-xs-6">AED 75</span></p>
+                      </div>
+                      <div class="row">
+                        <p><label class="col-md-3 col-xs-6 pl0">Mobile Number:</label><span class="col-md-9 col-xs-6">*** *** *987</span></p>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 enter_otp_grp pl0">
+                      <p>Successfully sent one time password to your registered mobile number *******859</p>
+                      <div class="col-md-2 col-xs-12 col-sm-6 ">
+                        <input type="text" class="form-control" value="" placeholder="OTP">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- payment gateway enter OTP end-->    
               <div class="tab-pane fade" id="myprofile">
                 <div class="col-md-12 heading_wrapper mb20 mt0">
                   <h3 class="dashboard-heading">my profile</h3>
@@ -293,52 +363,11 @@
                     <div class="col-xs-12 p0">
                       <div class="payment-tab-sec">
                         <ul class="tabs">
-                          <li class="active" rel="changepassword">change password</li>
-                          <li rel="editprofile">edit profile</li>
+                          <li class="active" rel="editprofile">edit profile</li>
+                          <li rel="changepassword">change password</li>
                         </ul>
                         <div class="tab_container">
-                          <h3 class="d_active tab_drawer_heading" rel="changepassword">add card details</h3>
-                          <div id="changepassword" class="tab_content">
-                            <div class="col-md-12 p0">
-                            <div class="col-sm-8 pl0">
-                              <form>
-                                <div class="control-group">
-                                  <label label-default="" class="control-label">Enter Your Old Password</label>
-                                  <div class="controls">
-                                      <input class="form-control" autocomplete="off" placeholder=" " required="" type="text">
-                                  </div>
-                                </div>
-                                <div class="control-group">
-                                  <label label-default="" class="control-label">Enter Your New Password</label>
-                                  <div class="controls">
-                                      <input class="form-control" required="" type="text">
-                                  </div>
-                                </div>
-                                <div class="control-group">
-                                  <label label-default="" class="control-label">Confirm Password</label>
-                                  <div class="controls">
-                                      <input class="form-control" required="" type="text">
-                                  </div>
-                                </div>                               
-                                <div class="control-group">
-                                  <div class="controls">
-                                    <button type="submit" class="btn btn-emal">Pay</button>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                            <div class="col-md-4 pr0">
-                              <div class="wal-balance text-center">
-                                <img src="assets/images/customer-dashboard/wallet.png" alt="wallet" class="img-responsive">
-                                <h4>wallet  balance</h4>
-                                <h2>AED 75.00</h2>
-                                <a href="">top up wallet</a>
-                              </div>
-                            </div>
-                          </div>
-                          </div>
-                          <!-- #tab1 -->
-                          <h3 class="tab_drawer_heading" rel="editprofile">edit profile</h3>
+                          <h3 class="d_active tab_drawer_heading" rel="editprofile">edit profile</h3>
                           <div id="editprofile" class="tab_content">
                             <div class="col-md-12 p0">
                               <div class="col-md-2">
@@ -385,7 +414,7 @@
                                     </div>
                                     <div class="col-sm-6 pr0">
                                     <label label-default="" class="control-label">Date</label>
-                                    <div class="input-group date" data-provide="datepicker">
+                                    <div class="input-group date" id="startdate">
                                         <input type="date" class="form-control">
                                         <div class="input-group-addon">
                                             <span class="glyphicon glyphicon-th"></span>
@@ -427,6 +456,47 @@
                               </div>
                             </div>
                           </div>
+                          <!-- #tab1 -->
+                          <h3 class="tab_drawer_heading" rel="changepassword">add card details</h3>
+                          <div id="changepassword" class="tab_content">
+                            <div class="col-md-12 p0">
+                            <div class="col-sm-8 pl0">
+                              <form>
+                                <div class="control-group">
+                                  <label label-default="" class="control-label">Enter Your Old Password</label>
+                                  <div class="controls">
+                                      <input class="form-control" autocomplete="off" placeholder=" " required="" type="text">
+                                  </div>
+                                </div>
+                                <div class="control-group">
+                                  <label label-default="" class="control-label">Enter Your New Password</label>
+                                  <div class="controls">
+                                      <input class="form-control" required="" type="text">
+                                  </div>
+                                </div>
+                                <div class="control-group">
+                                  <label label-default="" class="control-label">Confirm Password</label>
+                                  <div class="controls">
+                                      <input class="form-control" required="" type="text">
+                                  </div>
+                                </div>                               
+                                <div class="control-group">
+                                  <div class="controls">
+                                    <button type="submit" class="btn btn-emal">Pay</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-md-4 pr0">
+                              <div class="wal-balance text-center">
+                                <img src="assets/images/customer-dashboard/wallet.png" alt="wallet" class="img-responsive">
+                                <h4>wallet  balance</h4>
+                                <h2>AED 75.00</h2>
+                                <a href="">top up wallet</a>
+                              </div>
+                            </div>
+                          </div>
+                          </div>                       
                           <!-- #tab2 -->
                         </div>
                       </div>
@@ -458,7 +528,7 @@
                                       </p>
                                   </div>
                                   <div class="col-md-5 pr0 crd-rmve">
-                                    <p><i class="fa fa-trash-o" aria-hidden="true"></i>remove</p>
+                                    <p><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i>remove</a></p>
                                   </div>
                                 </div>
                                 <div class="control-group">
@@ -469,7 +539,7 @@
                                       </p>
                                   </div>
                                   <div class="col-md-5 pr0 crd-rmve">
-                                    <p><i class="fa fa-trash-o" aria-hidden="true"></i>remove</p>
+                                    <p><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i>remove</a></p>
                                   </div>
                                   </div>
 
@@ -502,117 +572,184 @@
                         </ul>
                         <div class="tab_container">
                           <h3 class="d_active tab_drawer_heading" rel="e-wallet">e-wallet</h3>
-                          <div id="e-wallet" class="tab_content">
-                            <table id="e-wallet-table" class="table table-striped table-bordered" style="width:100%">
+                          <div id="e-wallet" class="tab_content email-table">
+                            <div class="col-md-12 p0 mb20">
+                              <form class="form-inline" id="filter-search">
+                                <div class="col-md-5 ">
+                      <div class="form-group">
+                      <label for="">From Date</label>
+                       <div class="input-group date" id="startdate">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="form-group">
+                      <label for="">To Date</label>
+                        <div class="input-group date" id="enddate">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <button type="button" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i>
+ Export</button></div>
+                    </form>                           
+                            </div>
+                            <table id="e-wallet-table" class="table table-bordered" style="width:100%">
                                 <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                    </tr>
+                                  <tr>
+                                    <th scope="col">Ref Id</th>
+                                    <th scope="col">Company</th>
+                                    <th scope="col">Card Type</th>
+                                    <th scope="col" style="width: 24%;">Top-up Date/Time</th>
+                                    <th scope="col">Top-up Amount</th>
+                                    <th scope="col">Status</th>
+                                  </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>$86,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cedric Kelly</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29</td>
-                                        <td>$433,060</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
-                                    </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Company">Visa</td>
+                                    <td data-label="Card Type">Debit card</td>
+                                    <td data-label="Top-up Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Top-up Amount">AED 100</td>
+                                    <td data-label="Status">Success</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Company">Visa</td>
+                                    <td data-label="Card Type">Debit card</td>
+                                    <td data-label="Top-up Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Top-up Amount">AED 100</td>
+                                    <td data-label="Status">fail</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Company">Visa</td>
+                                    <td data-label="Card Type">Debit card</td>
+                                    <td data-label="Top-up Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Top-up Amount">AED 100</td>
+                                    <td data-label="Status">Success</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Company">Visa</td>
+                                    <td data-label="Card Type">Debit card</td>
+                                    <td data-label="Top-up Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Top-up Amount">AED 100</td>
+                                    <td data-label="Status">fail</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Company">Visa</td>
+                                    <td data-label="Card Type">Debit card</td>
+                                    <td data-label="Top-up Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Top-up Amount">AED 100</td>
+                                    <td data-label="Status">Success</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Company">Visa</td>
+                                    <td data-label="Card Type">Debit card</td>
+                                    <td data-label="Top-up Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Top-up Amount">AED 100</td>
+                                    <td data-label="Status">fail</td>
+                                  </tr>
                                 </tbody>
                             </table>
                           </div>
                           <!-- #tab1 -->
                           <h3 class="tab_drawer_heading" rel="transactions">transactions</h3>
-                          <div id="transactions" class="tab_content">
-                            <table id="transactions-table" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                          <div id="transactions" class="tab_content email-table">
+                            <div class="col-md-12 p0 mb20">
+                              <form class="form-inline" id="filter-search">
+                                <div class="col-md-5 ">
+                      <div class="form-group">
+                      <label for="">From Date</label>
+                       <div class="input-group date" id="startdate">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <div class="form-group">
+                      <label for="">To Date</label>
+                        <div class="input-group date" id="enddate">
+                            <input class="form-control" type="text">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <button type="button" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i>
+ Export</button></div>
+                    </form>                           
+                            </div>
+                            <table id="transactions-table" class="table table-bordered" style="width:100%">
                                 <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                    </tr>
+                                  <tr>
+                                    <th scope="col">Ref Id</th>
+                                    <th scope="col">Merchant</th>
+                                    <th scope="col" style="width: 24%;">Trans Date/Time</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Status</th>
+                                  </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>$86,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cedric Kelly</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29</td>
-                                        <td>$433,060</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
-                                    </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Merchant">Visa</td>
+                                    <td data-label="Trans Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Amount">AED 120.0</td>
+                                    <td data-label="Status">Success</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Merchant">Visa</td>
+                                    <td data-label="Trans Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Amount">AED 200.0</td>
+                                    <td data-label="Status">Fail</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Merchant">Visa</td>
+                                    <td data-label="Trans Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Amount">AED 120.0</td>
+                                    <td data-label="Status">Success</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Merchant">Visa</td>
+                                    <td data-label="Trans Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Amount">AED 200.0</td>
+                                    <td data-label="Status">Fail</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Merchant">Visa</td>
+                                    <td data-label="Trans Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Amount">AED 120.0</td>
+                                    <td data-label="Status">Success</td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Ref Id">TY001</td>
+                                    <td data-label="Merchant">Visa</td>
+                                    <td data-label="Trans Date/Time">03/01/2016 - 10:00 am</td>
+                                    <td data-label="Amount">AED 200.0</td>
+                                    <td data-label="Status">Fail</td>
+                                  </tr>
                                 </tbody>
                             </table>
                           </div>
@@ -631,8 +768,7 @@
   </section>
     <!-- Scripts files -->
     <script src="assets/js/jquery.min.js" defer></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11,fc-3.2.1/datatables.min.js">
-  </script>
+    <script src="assets/js/bootstrap-datepicker.min.js" defer></script>
     <script src="assets/js/viewportchecker.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script>
     <script src="assets/js/slick.js" defer></script>
