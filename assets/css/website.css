@@ -117,7 +117,7 @@ body{
 /*section home one ends*/
 /*section home two strats*/
 .home-two {
-    background: #F7D065;
+    background: #9a7a32;
     text-align: center;
     padding: 60px 0px;
 
@@ -318,9 +318,9 @@ body{
     margin-right: 0;
 }
 .social-icon .link {
-    border: 1px solid #8b8473;
+    border: 1px solid #735E29;
     border-radius: 50%;
-    color: #8b8473;
+    color: #735E29;
     display: inline-block;
     font-size: 16px;
     height: 40px;
