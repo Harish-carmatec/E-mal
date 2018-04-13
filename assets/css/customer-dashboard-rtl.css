@@ -1,0 +1,918 @@
+@font-face {
+ font-family: "Dubai-Bold";
+ src: url('../fonts/Dubai-Bold.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Bold.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+@font-face {
+ font-family: "Dubai-Light";
+ src: url('../fonts/Dubai-Light.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Light.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Light.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Light.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+@font-face {
+ font-family: "Dubai-Medium";
+ src: url('../fonts/Dubai-Medium.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Medium.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Medium.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Medium.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+@font-face {
+ font-family: "Dubai-Regular";
+ src: url('../fonts/Dubai-Regular.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/Dubai-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Dubai-Regular.woff') format('woff'), /* Modern Browsers */ url('../fonts/Dubai-Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Dubai-Regular.svg#Trebuchet MS') format('svg'); /* Legacy iOS */
+}
+/* Body Css Starts here*/
+body{
+	background:#E9DCD3 url('../images/customer-dashboard/customer-bg.jpg') no-repeat;
+	font-family: "Dubai-Regular";
+	font-size: 16px;
+  background-size: cover;
+}
+.p0{
+    padding:0px !important;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+.ml15{
+  margin-left: 15px;
+}
+.pr0{
+  padding-right: 0px;
+}
+.pl0{
+  padding-left: 0px;
+}
+.body-content {
+    margin-top: 100px;
+}
+/* Body Css Starts here*/
+/* Header Css Starts here*/
+.customer-dashboard .navbar.navbar-fixed-top {
+    background: #fff;
+}
+.navbar.navbar-fixed-top {
+    border-radius: 0;
+    border-bottom: 2px solid #6E686B;
+    min-height: 100px;
+}
+#myNavbar, #mobileMenu {
+    padding-top: 25px;
+}
+.navbar-nav > li > a {
+    color: #eee;
+    text-transform: uppercase;
+    font-family: Dubai-Regular;
+    font-size: 18px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background: none;
+}
+.nav > li.active a {
+    color: #e1aa53;
+    font-size: 18px;
+    font-family: Dubai-Medium;
+}
+.navbar-brand {
+    width: 150px;
+margin-left: 15px;
+}
+.navbar-nav.login-menu > li > a {
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.navbar-nav.login-menu li.language a {
+    color: #999;
+}
+.navbar-nav.main-menu {
+    float: left;
+    margin: 0;
+    padding-left: 100px;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	background:transparent;
+}
+.nav-stacked > li + li {
+    margin-top: 0px;
+    margin-left: 0;
+}
+.customer-dashboard .navbar-right {
+    float: right !important;
+    margin-right: 10px;
+}
+.navbar-nav > li.profile-pic {
+    margin-top: -15px;
+}
+/* header Css Ends here*/
+
+/*customer dashboard css*/
+:focus {
+  outline: none;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.side-menu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #9a7a32;
+}
+.side-menu .navbar {
+  border: none;
+}
+.side-menu .navbar-header {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu .navbar-nav .active a {
+  background-color: transparent;
+  margin-right: -1px;
+}
+.side-menu .navbar-nav li {
+  display: block;
+  width: 100%;
+}
+.side-menu .navbar-nav li a {
+  padding: 15px;
+}
+.side-menu .navbar-nav li a .glyphicon {
+  padding-right: 10px;
+}
+.side-menu #dropdown {
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.side-menu #dropdown .caret {
+  float: right;
+  margin: 9px 5px 0;
+}
+.side-menu #dropdown .indicator {
+  float: right;
+}
+.side-menu #dropdown > a {
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu #dropdown .panel-body {
+  padding: 0;
+  background-color: #f3f3f3;
+}
+.side-menu #dropdown .panel-body .navbar-nav {
+  width: 100%;
+}
+.side-menu #dropdown .panel-body .navbar-nav li {
+  padding-left: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu #dropdown .panel-body .navbar-nav li:last-child {
+  border-bottom: none;
+}
+.side-menu #dropdown .panel-body .panel > a {
+  margin-left: -20px;
+  padding-left: 35px;
+}
+.side-menu #dropdown .panel-body .panel-body {
+  margin-left: -15px;
+}
+.side-menu #dropdown .panel-body .panel-body li {
+  padding-left: 30px;
+}
+.side-menu #dropdown .panel-body .panel-body li:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+.side-menu #search-trigger {
+  background-color: #f3f3f3;
+  border: 0;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 18px;
+}
+.side-menu .brand-name-wrapper {
+  min-height: 50px;
+}
+.side-menu .brand-name-wrapper .navbar-brand {
+  display: block;
+}
+/* Main body section */
+.side-body {
+  margin-left: 310px;
+  margin-right: 10px;
+}
+/*css customer dashboard*/
+
+/*footer section starts*/
+footer {
+    background: #1f1f1f none repeat scroll 0 0;
+    padding: 30px 0px;
+}
+.list-unstyled.quick-links {
+    margin-top: 15px;
+}
+.list-unstyled.quick-links > li{
+    display: inline;
+    margin-right: 10px;
+}
+.list-unstyled.social > li{
+    display: inline;
+    margin-right: 0px;
+}
+.list-unstyled.quick-links a, .powered-by {
+    color: #928978;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.footer-logo > img {
+    display: inherit;
+    margin: 0 auto;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo > img {
+    display: inherit;
+    margin: 0 auto;
+}
+.footer-logo > span {
+    color: #fff;
+    display: inline-block;
+    float: none;
+    font-size: 20px;
+    margin: 15px auto 0;
+    text-align: center;
+    width: 60%;
+}
+.follow-us{
+    text-align: right;
+}
+.follow-us > h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.social {
+    position: relative;
+    text-align: right;
+    transform: translateY(-50%);
+}
+.social .link {
+    background-clip: content-box;
+    border: 2px solid #8b8473;
+    border-radius: 50%;
+    color: #8b8473;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 0px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    vertical-align: middle;
+    width: 50px;
+}
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social .link:hover {
+  padding: 20px;
+  color: #fff;
+  border-color: #fff;
+  transform: translateX(0px) rotate(360deg);
+}
+/*customer-admin CSS starts */
+.customer-dashboard .navbar {
+    border-radius: 0;
+    border-bottom: 0px solid #6E686B;
+    min-height: 100px;
+    margin-bottom: 0px;
+}
+.customer-dashboard .navbar-nav.login-menu li.language a {
+    color: #777;
+}
+ul li.bell-notification .fa.fa-bell {
+    color: #F7D065;
+    font-size: 24px;
+}
+ul li.bell-notification a {
+    position: relative;
+}
+.bel-count {
+    background: #4B4B4B;
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    text-align: center;
+}
+ul li.bell-notification a {
+    position: relative;
+}
+.nav.nav-pills li a {
+    color: #f5f5f5;
+    font-size: 18px;
+    font-family: Dubai-Regular;
+    text-transform: uppercase;
+    padding: 20px 0px 20px 0px;
+    margin-left: 30px;
+    border-bottom: 1px solid #CEA942;
+    border-radius: 0px;
+    line-height: 18px;
+
+}
+.nav.nav-pills li a span{
+    margin-right: 10px;
+}
+.nav.nav-pills li.active a, .nav.nav-pills li.active a:hover,.nav.nav-pills li.active a:focus {
+    border-radius: 0px;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+}
+.nav.nav-pills li:hover, .nav.nav-pills li.active {
+    background: #eee;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+  background:transparent;
+}
+.nav.nav-pills li.active{
+    background:#fff;
+}
+.nav-stacked li {
+    background: #9a7a32;
+}
+/*3rd April CSS */
+.propic {
+    display: inline-block;
+    width: 35%;
+}
+.card_content {
+    display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    float: right;
+}
+.cardinfo_content{
+     display: inline-block;
+    width: 55%;
+    vertical-align: top;
+    float: right;
+}
+.main_wrapper {
+    background: #EFE4DE;
+}
+.card_info {
+    background: #FEFEFE;
+    padding: 6%;
+    display: inline-block;
+    width: 100%;;
+}
+.card_content p {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: "Dubai-Light";
+}
+.card_content span {
+    display: block;
+    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+}
+.card_content .span h4{
+  color:#000000;
+}
+.card_content .span{
+    margin-top: 55px;
+}
+.cardinfo_content .span{
+    margin-top: 50px;
+}
+.card_info a {
+    color: #000000;
+}
+.cardinfo_content p {
+    color: #000000;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.cardinfo_content .balance {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Dubai-Light";
+}
+.cardinfo_content button {
+    background: #FCCE70;
+    border: 1px solid #FCCE70;
+    text-transform: capitalize;
+    padding: 3% 8%;
+}
+.cardinfo_content .fa.fa-plus {
+    position: relative;
+    top: 2px;
+}
+.transfer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+.transfer-funds {
+    background: #FEFEFE;
+    text-align: center;
+}
+.transfer::after{
+  content: '';
+  height: 100px;
+  border-right: 1px solid #bbb;
+  right: 0;
+  position: absolute;
+  top: 30%;
+}
+.transfer-funds:last-child .transfer::after{
+  border-right: 1px solid transparent;
+}
+.transfer p {
+    text-transform: capitalize;
+    margin-top: 9px;
+    font-size: 18px;
+    color: #000;
+}
+.transfer img:hover {
+    background: #FCCE70;
+    cursor: pointer;
+}
+.dashboard-heading {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #000000;
+}
+.image {
+    width: 100%;
+    cursor: pointer;
+    height: 121px;
+}
+.image.tranfer{
+    background: url('../images/customer-dashboard/Tfund.png')no-repeat center center;
+}
+.image.tranfer:hover {
+    background: url('../images/customer-dashboard/Tfund1.png')no-repeat center center;
+}
+.image.pay-bil{
+    background: url('../images/customer-dashboard/Pay-bills.png')no-repeat center center;
+}
+.image.pay-bil:hover {
+    background: url('../images/customer-dashboard/Pay-bills1.png')no-repeat center center;
+}
+.image.e-charge{
+    background: url('../images/customer-dashboard/e-charge.png')no-repeat center center;
+}
+.image.e-charge:hover {
+    background: url('../images/customer-dashboard/e-charge1.png')no-repeat center center;
+}
+.image.e-Mal{
+    background: url('../images/customer-dashboard/emal.png')no-repeat center center;
+}
+.image.e-Mal:hover {
+    background: url('../images/customer-dashboard/emal1.png')no-repeat center center;
+}
+.tab-content {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/*Topup Wallet Page starts*/
+.top-up-del-sec {
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(12, 12, 13, 0.1);
+  display: inline-block;
+width: 100%;
+}
+.tad-content-outer {
+    display: block;
+}
+.top-up-del-sec .sub-heading {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: "Dubai-Regular";
+    color: #000;
+}
+.top-up-del-sec .payment-tab-sec {
+    padding: 0px 30px;
+    margin-top: 30px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.payment-tab-sec ul.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  height: 32px;
+  width: 100%;
+  border-bottom: 2px solid #eee;
+}
+.payment-tab-sec ul.tabs li {
+  float: left;
+  margin: 0;
+  cursor: pointer;
+  padding: 0px 15px 0px 0px;
+  line-height: 16px;
+  color: #222;
+  overflow: hidden;
+  position: relative;
+  font-weight: bold;
+  font-family: "Dubai-Regular";
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 15px;
+  border-right: 2px solid #000;
+}
+.payment-tab-sec .tab_last { 
+  border-right: 0px solid transparent !important;
+}
+.payment-tab-sec ul.tabs li:hover {
+  background-color: #fff;
+  color: #D7913D;
+}
+.payment-tab-sec ul.tabs li.active {
+  background-color: #fff;
+  color: #D7913D;
+  display: block;
+}
+.payment-tab-sec .tab_container {
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #fff;
+  overflow: auto;
+}
+.payment-tab-sec .tab_content {
+  padding: 20px 0px;
+  display: none;
+}
+.payment-tab-sec .tab_drawer_heading { 
+  display: none; 
+}
+#addcard .control-label, #changepassword .control-label, #editprofile .control-label {
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0px;
+}
+.customer-dashboard .controls .form-control {
+    border-radius: 0px;
+    border: 2px solid #eee;
+    box-shadow: none;
+}
+#addcard .controls .form-control {
+    border-radius: 0px;
+    border: 2px solid #eee;
+    box-shadow: none;
+}
+#addcard .control-group .controls, #changepassword .control-group .controls, #editprofile .control-group .controls {
+    margin-bottom: 15px;
+}
+#addcard .control-group .radio-inline, .gender-area .radio-inline {
+    line-height: 26px;
+}
+.btn-emal{
+  background: #d6a848; /* Old browsers */
+    background: -moz-linear-gradient(top, #d6a848 0%, #ce9740 31%, #c88e3f 65%, #c38639 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6a848', endColorstr='#c38639',GradientType=0 ); /* IE6-9 */
+    border: 0px;
+    border-radius: 24px;
+    color: #fff;
+    margin-top: 5px;
+    padding: 10px 50px;
+    font-size: 16px; 
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.btn-cancel{
+  background: #c2c2c2; /* Old browsers */
+background: -moz-linear-gradient(top, #c2c2c2 0%, #bbbbbb 34%, #adadad 66%, #acacac 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #c2c2c2 0%,#bbbbbb 34%,#adadad 66%,#acacac 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #c2c2c2 0%,#bbbbbb 34%,#adadad 66%,#acacac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', endColorstr='#acacac',GradientType=0 );
+    border: 0px;
+    border-radius: 24px;
+    color: #fff;
+    margin-top: 5px;
+    padding: 10px 50px;
+    font-size: 16px; 
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+#savedcard .radio-inline .card-detls {
+    display: block;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+#savedcard .radio-inline .card-detls span {
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+#savedcard .control-group {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.cvv-no .form-control {
+    width: 40%;
+    height: 40px;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    border: 2px solid #eee;
+    border-radius: 0;
+    box-shadow: none;
+}
+#changepassword .form-control, #addcard .form-control, #editprofile .form-control {
+    width: 100%;
+    height: 40px;
+    padding: 6px 16px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    border: 2px solid #eee;
+    border-radius: 0;
+}
+#savedcard input[type="radio"] {
+    margin-top: 12px;
+}
+.wal-balance {
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 30px;
+}
+.wal-balance img{
+  display: inline-block;
+}
+.wal-balance h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.wal-balance h2 {
+    margin-top: 0px;
+    font-size: 24px;
+}
+.wal-balance a {
+    background: #f7d95d;
+    padding: 5px 30px;
+    text-transform: capitalize;
+    color: #333;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+.wal-balance a:hover{
+  text-decoration: none;
+}
+.profile-img-upload #image_upload_preview {
+    width: 100px;
+    height: auto;
+}
+.trigger {
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#inputFile {
+ display: none;
+}
+.gender-area {
+    display: inline-block;
+    margin-right: 30px;
+}
+.gender-area .radio-inline input{
+    margin-right: 10px;
+}
+#savedcarddel .card-detls span {
+    display: inline-block;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+#savedcarddel .card-detls {
+    display: block;
+}
+#savedcarddel .control-group {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#savedcarddel .crd-rmve p a{
+    margin-top: 0px;
+    text-align: center;
+    color: #bbb;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+#savedcarddel .crd-rmve p a i{
+  padding-right: 10px;
+}
+#editprofile #startdate .form-control{
+  border-right: 0px;
+}
+#editprofile #startdate .input-group-addon{
+  background-color: #fff;
+  border-radius: 0px;
+  border:2px solid #eee;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border-left: 0px;
+}
+/*Topup Wallet Page starts*/
+/*wallet popup css start*/
+.wal-bal{
+    padding:18px 0px;   
+}
+.add-amt{
+    padding: 29px 33px;
+}
+.pre-amt-grp {
+    padding: 29px 0px;
+    margin-top: 30px;
+}
+.amt_chk {
+    background: #f7d064;
+    border: transparent;
+    border-radius: 18px;
+    margin-right: 14px;
+    font-weight: 600;
+    padding: 3px 10px;
+}
+.add_btn_grp {
+    padding: 0px 0px 30px 32px;
+}
+.add_money_btn {
+    background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%);
+    color: #fff;
+    border-radius: 31px;
+    padding: 9px 27px;
+}
+.btn:hover {
+  opacity:0.8;
+  color:#fff;
+}
+.add_money_btn:active {
+  color:#fff;
+  background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%);
+}
+.enter_otp_grp {
+    padding: 0px 0px 35px 33px;
+}
+.form-control.otp {
+    text-align: center;
+    border-radius: 0px;
+}
+/*wallet popup css end*/
+.email-table table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 30px;
+}
+.email-table table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+.email-table table tr {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+.email-table table thead tr {
+  border-bottom: 0px solid #ddd;
+}
+.email-table table th,
+.email-table table td {
+  padding: .625em;
+}
+.email-table table th {
+    text-transform: capitalize;
+}
+.datepicker.datepicker-dropdown.dropdown-menu {
+    z-index: 9999;
+}
+.email-table .btn {
+    background: #F7D065;
+    border: 1px solid #F7D065;
+    border-radius: 0px;
+    padding: 6px 30px;
+    color: #333;
+}
+.btn-primary:active:hover{
+  background: #F7D065;
+    border: 1px solid #F7D065;
+    border-radius: 0px;
+    padding: 6px 30px;
+    color: #333;
+}
+.email-table .input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: 0px;
+    border-radius: 0;
+}
+.email-table .input-group .form-control{
+  border-radius: 0;
+  border-right: 0px;
+}
+.email-table  label {
+    font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+  .email-table table {
+    border: 0;
+  }
+
+  .email-table table caption {
+    font-size: 20px;
+  }
+  
+  .email-table table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .email-table table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .email-table table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: left;
+  }
+  
+  .email-table table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .email-table .table td:last-child {
+    border-bottom: 0;
+  }
+}

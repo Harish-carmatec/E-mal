@@ -272,6 +272,7 @@ body{
 .slick-slide.slick-current.slick-active.slick-center {
     transform: scale(1.3);
     opacity: 1;
+    background: #9a7a32;
 }
 .slick-slide.slick-current.slick-active.slick-center .slide-con{
     background: #9a7a32;
