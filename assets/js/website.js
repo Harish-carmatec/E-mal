@@ -7,7 +7,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
 	  centerMode: true,
     centerPadding: '0px',
-    autoplay: true,
+    //autoplay: true,
   	autoplaySpeed: 2000,
     index: 1,
     focusOnSelect:true,
