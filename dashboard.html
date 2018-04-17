@@ -11,6 +11,7 @@
     <link href="assets/css/slick-theme.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Style.css -->
     <link href="assets/css/customer-dashboard.css" rel="stylesheet">
@@ -360,6 +361,7 @@
                         <ul class="tabs">
                           <li class="active" rel="editprofile">edit profile</li>
                           <li rel="changepassword">change password</li>
+                          <li rel="kycdetails">KYC details</li>
                         </ul>
                         <div class="tab_container">
                           <h3 class="d_active tab_drawer_heading" rel="editprofile">edit profile</h3>
@@ -477,7 +479,7 @@
                                 </div>                               
                                 <div class="control-group">
                                   <div class="controls">
-                                    <button type="submit" class="btn btn-emal">Pay</button>
+                                    <button type="submit" class="btn btn-emal">Save</button>
                                   </div>
                                 </div>
                               </form>
@@ -493,6 +495,62 @@
                           </div>
                           </div>                       
                           <!-- #tab2 -->
+                          <h3 class="tab_drawer_heading" rel="kycdetails">KYC details</h3>
+                          <div id="kycdetails" class="tab_content">
+                            <div class="col-md-12 p0">
+                              <form class="">
+                                <div class="col-md-6">
+                                <div class="clone-kyc">
+                                  <div class="control-group">
+                                    <div class="clo-del-kyc">
+                                      <button type="button" title="delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                    </div>
+                                    <label label-default="" class="control-label">Select Any ID</label>
+                                    <div class="controls">
+                                        <select class="form-control" id="sel1">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label label-default="" class="control-label">Enter Your ID Number</label>
+                                    <div class="controls">
+                                        <input class="form-control" required="" type="text">
+                                    </div>
+                                  </div>
+                                  <div class="control-group">
+                                    <label label-default="" class="control-label">Upload your ID proof</label>
+                                    <div class="controls idproof">
+                                        <input class="form-control" required="" type="file" id="idproof">
+                                        <span><i class="fa fa-upload" aria-hidden="true"></i> Upload</span>
+                                    </div>
+                                  </div> 
+                                </div>
+                                <div class="cloned-kyc">
+                                </div>
+                              </div>
+                                <div class="kyc-button col-md-12 p0">
+                                  <div class="control-group col-md-6">
+                                    <div class="controls">
+                                      <button type="submit" class="btn btn-emal pull-left">Save</button>
+                                      <button type="button" class="btn btn-emal btn-cancel pull-right">Cancel</button>
+                                    </div>
+                                  </div>
+                                  <div class="control-group col-md-6">
+                                    <div class="controls add-more">
+                                      <button type="button" class="btn btn-emal kyc-clone">Add more</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            </div>
+                          </div>
+                          </div>
+                          <!-- #tab3 -->
                         </div>
                       </div>
                     </div>
@@ -766,6 +824,7 @@
     <script src="assets/js/bootstrap-datepicker.min.js" defer></script>
     <script src="assets/js/viewportchecker.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/bootstrap-select.min.js" defer></script>
     <script src="assets/js/slick.js" defer></script>
     <script src="assets/js/customer-dashboard.js" defer></script>
     <script src="assets/js/animation.js" defer></script>

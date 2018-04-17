@@ -765,4 +765,76 @@ font-size: 34px;
 .services-three {
     padding: 60px 0px;
 }
+.service-tab-section ul li a {
+    border: 2px solid #D8D8D8;
+    border-radius: 0px;
+    color:#8D8D8D;
+    padding:20px 91px;
+    position: relative;
+    font-size: 18px;
+    margin-right: 0px;
+    font-family: "Dubai-Regular";
+}
+.service-tab-section .nav-tabs {
+    border-bottom: 0px solid #ddd;
+}
+.service-tab-section .nav-tabs > li.active > a, .service-tab-section .nav-tabs > li.active:hover > a, .service-tab-section .nav-tabs > li:hover > a{
+    border: 2px solid #B29967;
+    color: #B29967;
+    font-family: "Dubai-Regular";
+    cursor: pointer;
+}
+.service-tab-section .nav-tabs > li{
+    margin-right: 20px;
+}
+.service-tab-section .nav-tabs > li:last-child {
+    margin-right: 0px;
+}
+.service-tab-section ul li a::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 46px;
+    left:10px;
+    top:10px;
+}
+.service-tab-section ul li a.transfer::before {
+    background: url('../images/transfer-icon.png')no-repeat;
+}
+.service-tab-section ul li a.paybill::before {
+    background: url('../images/paybill.png')no-repeat;
+}
+.service-tab-section ul li a.recharge::before {
+    background: url('../images/recharge.png')no-repeat;
+}
+.service-tab-section ul li a.emalcard::before {
+    background: url('../images/emal.png')no-repeat;
+}
+.service-tab-section ul li:hover a.transfer::before, .service-tab-section ul li.active a.transfer::before {
+    background: url('../images/transfer-icon-over.png')no-repeat;
+}
+.service-tab-section ul li:hover a.paybill::before, .service-tab-section ul li.active a.paybill::before {
+    background: url('../images/paybil-hoverl.png')no-repeat;
+}
+.service-tab-section ul li:hover a.recharge::before, .service-tab-section ul li.active a.recharge::before {
+    background: url('../images/recharge-hover.png')no-repeat;
+}
+.service-tab-section ul li:hover a.emalcard::before, .service-tab-section ul li.active a.emalcard::before {
+    background: url('../images/emal-hover.png')no-repeat;
+}
+.service-tab-section .tab-content {
+margin-top: 60px;
+}
+.service-tab-section .tab-content .content-sec {
+    background: #9A7A32;
+    color: #fff;
+}
+.service-tab-section .tab-content .content-sec h3{
+    margin-top: 40px;
+    padding: 0px 30px;
+    font-family: "Dubai-Medium";
+}
+.service-tab-section .tab-content .content-sec p{
+    padding: 0px 30px;
+}
 /* Services pages Css ends*/

@@ -88,3 +88,15 @@ $(document).ready(function() {
 });
 
 });
+$(document).ready(function(){
+  $(".kyc-clone").on('click' ,function(){
+   $('.clone-kyc').first().clone().appendTo( ".cloned-kyc" );
+     $('.clo-del-kyc button').on('click',function(){
+      //alert();
+      $(this).closest('.clone-kyc').remove();
+    });
+  });
+jQuery(".idproof span").click(function(){
+   jQuery(".idproof #idproof").trigger("click");
+});
+});
