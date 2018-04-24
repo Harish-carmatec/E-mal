@@ -641,7 +641,7 @@ display: inline-block;
 .otp_img {
     padding: 20px 0px;
 }
-.signin_form .form-control::-moz-placeholder, .forgot_form .form-control::-moz-placeholder{
+.signin_form .form-control::-moz-placeholder, .forgot_form .form-control::-moz-placeholder, .login_form .form-control::-moz-placeholder{
     color:#888;
 
 }
