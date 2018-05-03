@@ -645,6 +645,13 @@ display: inline-block;
     color:#888;
 
 }
+#otppopup .signin_form {
+    padding: 60px;
+    margin: 0px;
+}
+#otppopup .modal-body {
+    padding: 0;
+}
 /*signin page css ends*/
 
 /*FAQ page css starts*/

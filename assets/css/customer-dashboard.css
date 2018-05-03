@@ -939,6 +939,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', end
 .email-table  label {
     font-weight: 400;
 }
+/* select payment */
+.select-payment-method {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 0px;
+}
+.select-payment-method li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.select-payment-method li a span {
+    display: block;
+    text-align: center;
+}
+.select-payment-method li a {
+    display: inline-block;
+    padding: 20px;
+    color: #000000;
+    background: #EBE4DE;
+}
+.select-payment-method li.active a {
+    box-shadow: 0 0 15px 0 rgba(12, 12, 13, 0.1);
+    color: #997835;
+    text-decoration: none;
+}
+.select-payment-method li a:hover {
+  text-decoration: none;
+  color: #997835;
+}
 @media screen and (max-width: 600px) {
   .email-table table {
     border: 0;

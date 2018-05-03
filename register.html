@@ -56,13 +56,7 @@
           </nav>
         </div>
       </header>
-        <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 text-center mid_logo_Section">
-                    <img src="assets/images/e-Mal-logo.png" alt="">
-                </div>
-            </div> -->
-          
+        <div class="container">        
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12 ">
                         <form method="post" action="" class="login_form">
@@ -89,7 +83,7 @@
                                 <span>By Signing Up you will be agreeing to the <a>terms and conditions</a></span>
                             </div>
                             <div class="text-center fm_ctrl">
-                                <button type="submit" class="btn btn-default btn_sub">Register</button>
+                                <button type="button" class="btn btn-default btn_sub" data-toggle="modal" data-target="#otppopup">Register</button>
                             </div>
                             <h5 class="text-center">OR</h5>
                             <p class="loginbottomtext text-center">Sign up using social networks</p>
@@ -134,5 +128,38 @@
         </div>
       </div>
       </footer>
+      <div class="modal fade" id="otppopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form method="post" action="" class="signin_form">
+                <p class="reg_header">OTP Verification</p>
+                <div class="otp_img text-center">
+                  <img src="assets/images/otp.png" alt="OTP">
+                </div>
+                <div class="form-group otp_txt">
+                  <span>Please enter the OTP sent your mobile number <strong>+91 8874459585</strong></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control fm_ctrl" required name="top" id="otp" placeholder="Password">
+                </div>
+                <div class="form-group text-right fgt_pwd">
+                    <caption><a href="#"><i>Resend OTP?</i></a></caption>
+                </div>
+                <div class="text-center fm_ctrl">
+                    <button type="submit" class="btn btn-default btn_sub signin_btn">Submit</button>
+                </div>
+              </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Scripts files -->
+<script src="assets/js/jquery.min.js" defer ></script>
+    <script src="assets/js/viewportchecker.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/slick.js" defer></script>
+    <script src="assets/js/website.js" defer></script>
+    <script src="assets/js/animation.js" defer></script>
     </body>
 </html>
