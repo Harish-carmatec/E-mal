@@ -99,4 +99,15 @@ $(document).ready(function(){
 jQuery(".idproof span").click(function(){
    jQuery(".idproof #idproof").trigger("click");
 });
+
+$('.ar').on('click',function(){
+$('body').addClass('arabic');
+$('body').attr('dir','rtl');
+$('html').attr('lang','ar');
+});
+$('.en').on('click',function(){
+$('body').removeClass('arabic');
+$('body').attr('dir','ltr');
+$('html').attr('lang','en');
+});
 });

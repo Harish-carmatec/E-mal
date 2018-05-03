@@ -130,7 +130,7 @@ margin-left: 15px;
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: #9a7a32;
+  background-color:#997835;
 }
 .side-menu .navbar {
   border: none;
@@ -142,6 +142,7 @@ margin-left: 15px;
 .side-menu .navbar-nav .active a {
   background-color: transparent;
   margin-right: -1px;
+  color: #0F0F0F;
 }
 .side-menu .navbar-nav li {
   display: block;
@@ -339,15 +340,19 @@ ul li.bell-notification a {
 }
 .nav.nav-pills li a {
     color: #f5f5f5;
-    font-size: 18px;
+    font-size: 20px;
     font-family: Dubai-Regular;
     text-transform: uppercase;
     padding: 20px 0px 20px 0px;
     margin-left: 30px;
-    border-bottom: 1px solid #CEA942;
+    border-bottom: 1px solid #765C1E;
     border-radius: 0px;
-    line-height: 18px;
+    line-height: 20px;
 
+}
+.nav.nav-pills li:hover a, .nav.nav-pills li:focus a , .nav.nav-pills li:active a  {
+    border-bottom: 1px solid transparent;
+    color: #0F0F0F;
 }
 .nav.nav-pills li a span{
     margin-right: 10px;
@@ -356,6 +361,7 @@ ul li.bell-notification a {
     border-radius: 0px;
     background: transparent;
     border-bottom: 1px solid transparent;
+    color: #0F0F0F;
 }
 .nav.nav-pills li:hover, .nav.nav-pills li.active {
     background: #eee;
@@ -433,10 +439,11 @@ ul li.bell-notification a {
     font-family: "Dubai-Light";
 }
 .cardinfo_content button {
-    background: #FCCE70;
-    border: 1px solid #FCCE70;
+    background: #997835;
+    border: 1px solid #997835;
     text-transform: capitalize;
     padding: 3% 8%;
+    color: #fff;
 }
 .cardinfo_content .fa.fa-plus {
     position: relative;
@@ -470,7 +477,7 @@ ul li.bell-notification a {
     color: #000;
 }
 .transfer img:hover {
-    background: #FCCE70;
+    background: #997835;
     cursor: pointer;
 }
 .dashboard-heading {
@@ -831,18 +838,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2c2c2', end
     margin-top: 30px;
 }
 .amt_chk {
-    background: #f7d064;
+    background: #9A7A32;
     border: transparent;
     border-radius: 18px;
     margin-right: 14px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 3px 10px;
+    color:#fff;
 }
 .add_btn_grp {
     padding: 0px 0px 30px 32px;
 }
 .add_money_btn {
-    background: linear-gradient(to bottom, #d6a848 0%,#ce9740 31%,#c88e3f 65%,#c38639 100%);
+    background: #c68a39; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #c68a39 0%, #cb933e 32%, #d19d42 67%, #d9ab48 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #c68a39 0%,#cb933e 32%,#d19d42 67%,#d9ab48 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #c68a39 0%,#cb933e 32%,#d19d42 67%,#d9ab48 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c68a39', endColorstr='#d9ab48',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     color: #fff;
     border-radius: 31px;
     padding: 9px 27px;
