@@ -380,6 +380,10 @@ ul li.bell-notification a {
     display: inline-block;
     width: 35%;
 }
+.propic {
+    display: inline-block;
+    width: 35%;
+}
 .card_content {
     display: inline-block;
     width: 55%;
