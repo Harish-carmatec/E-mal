@@ -55,7 +55,7 @@ $(document).ready(function() {
 	$('.side-body ul.tabs li:last-child').addClass("tab_last");
 
 $(function () {
-    $('.side-menu .navbar-toggle').click(function () {
+    $('.brand-wrapper .navbar-toggle').click(function () {
         $('.navbar-nav').toggleClass('slide-in');
         $('.side-body').toggleClass('body-slide-in');
         $('.side-menu').toggleClass('open');
